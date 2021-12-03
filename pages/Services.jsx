@@ -1,22 +1,21 @@
-import React from 'react';
-import ServiceBody from '../components/services/ServiceBody';
-import ServiceHeader from '../components/services/ServiceHeader';
-import ServiceOfering from '../components/services/ServiceOfering';
-import ServiceSpaciality from '../components/services/ServiceSpaciality';
-import Footer from "./../components/Footer.tsx"
+import React from "react";
+import Layout from "../components/Layout";
+import ServiceBody from "../components/Services/ServiceBody";
+import ServiceHeader from "../components/Services/ServiceHeader";
+import ServiceOfering from "../components/Services/ServiceOfering";
+import ServiceSpaciality from "../components/Services/ServiceSpaciality";
 
 const Services = () => {
-    return (
-        <>
-        <div className="bg-black text-white md:px-60">
-            <ServiceHeader></ServiceHeader>
-            <ServiceBody></ServiceBody>
-            <ServiceOfering></ServiceOfering>
-            <ServiceSpaciality></ServiceSpaciality>
-        </div>
-        <Footer />
-        </>
-    );
+  return (
+    <Layout>
+      <div className="bg-black text-white md:px-60">
+        <ServiceHeader></ServiceHeader>
+        <ServiceBody></ServiceBody>
+        <ServiceOfering></ServiceOfering>
+        <ServiceSpaciality></ServiceSpaciality>
+      </div>
+    </Layout>
+  );
 };
 
 export default Services;

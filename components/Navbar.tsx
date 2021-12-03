@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 interface Props {
   transparent?: boolean;
@@ -8,15 +8,15 @@ interface Props {
 function Navbar(props: Props): ReactElement {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <>
-      <div className="flex justify-between  px-4 text-2xl text-white pt-3 sticky top-0 z-40 bg-black">
+    <div className="relative">
+      <div className="flex justify-between  px-4 text-2xl text-white pt-3 absolute top-0 z-40 bg-black">
         <div>
           <ul className="list-none ">
             <li>
-              <Link href="/">Service</Link>
+              <Link href="/services">Service</Link>
             </li>
             <li className="mt-1">
-              <Link href="/">The Write up</Link>
+              <Link href="/blogs">The Write up</Link>
             </li>
             <li className="mt-1">
               <Link href="/">Contect</Link>
@@ -30,7 +30,7 @@ function Navbar(props: Props): ReactElement {
           <i className="fas fa-home "></i>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 
