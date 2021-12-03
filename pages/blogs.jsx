@@ -1,6 +1,5 @@
 import React from "react";
-import BlogBody from "../components/Blog/BlogBody.jsx";
-import BlogHeader from "../components/Blog/BlogHeader.jsx";
+import { BlogsList, BlogHeader } from "../components/Blog";
 import Layout from "../components/Layout";
 
 const Blogs = () => {
@@ -8,7 +7,7 @@ const Blogs = () => {
     <Layout>
       <div className="bg-black text-white md:px-60">
         <BlogHeader></BlogHeader>
-        <BlogBody></BlogBody>
+        <BlogsList></BlogsList>
       </div>
     </Layout>
   );
