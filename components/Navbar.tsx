@@ -8,10 +8,10 @@ interface Props {
 function Navbar(props: Props): ReactElement {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <div className="relative">
-      <div className="flex justify-between  px-4 text-2xl text-white pt-3 absolute top-0 z-40 bg-black">
+    <div >
+      <div className="flex justify-between  px-4 text-2xl text-white pt-3 fixed top-0 z-40 ">
         <div>
-          <ul className="list-none ">
+          <ul className="list-none">
             <li>
               <Link href="/services">Service</Link>
             </li>
