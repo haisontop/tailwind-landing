@@ -3,7 +3,6 @@ import React from "react";
 const HomeTop = () => {
   return (
     <div className="pt-32">
-      <h1 className="text-white  top-3 right-36 text-2xl absolute">COMET</h1>
       <div className="text-white flex items-center justify-center md:pb-20 md:pt-10">
         <div>
           <h1 className="md:text-8xl sm:text-2xl">
