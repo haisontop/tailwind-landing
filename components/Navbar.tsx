@@ -1,15 +1,16 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import Link from "next/link";
+import { useScrollPosition } from "../hooks";
 
 interface Props {
   transparent?: boolean;
 }
 
 function Navbar(props: Props): ReactElement {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const showLogo = useScrollPosition(500);
 
   return (
-    <div >
+    <div>
       <div className="flex justify-between  px-4 text-2xl text-white pt-3 fixed top-0 z-40 ">
         <div>
           <ul className="list-none">
@@ -27,9 +28,11 @@ function Navbar(props: Props): ReactElement {
         <div> </div>
       </div>
       <div className="text-white top-3 right-5 text-3xl fixed z-40">
-        <Link href="/">
-          <h1>Home</h1>
-        </Link>
+        {showLogo && (
+          <Link href="/">
+            <h1>Home</h1>
+          </Link>
+        )}
       </div>
     </div>
   );
