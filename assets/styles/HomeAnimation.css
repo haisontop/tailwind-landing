@@ -1,16 +1,15 @@
 .first-slide {
-    transition: transform .35s;
-
+  transition: transform 0.35s;
 }
 
 .seccond-slide {
-    transition: transform .35s;
+  transition: transform 0.35s;
 }
 
 .main-box:hover .first-slide {
-    transform: translate(70px);
+  transform: translate(70px);
 }
 
 .main-box:hover .seccond-slide {
-    transform: translate(-70px);
+  transform: translate(-70px);
 }
