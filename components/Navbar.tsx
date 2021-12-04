@@ -28,11 +28,9 @@ function Navbar(props: Props): ReactElement {
         <div> </div>
       </div>
       <div className="text-white top-3 right-5 text-3xl fixed z-40">
-        {showLogo && (
-          <Link href="/">
-            <h1>Home</h1>
-          </Link>
-        )}
+        <Link href="/">
+          <h1>{showLogo ? "Home" : "COMMET"}</h1>
+        </Link>
       </div>
     </div>
   );
