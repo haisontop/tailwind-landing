@@ -1,0 +1,16 @@
+.first-slide {
+    transition: transform 1s;
+
+}
+
+.seccond-slide {
+    transition: transform 1s;
+}
+
+.main-box:hover .first-slide {
+    transform: translate(50px);
+}
+
+.main-box:hover .seccond-slide {
+    transform: translate(-50px);
+}

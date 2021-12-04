@@ -7,6 +7,7 @@ interface Props {
 
 function Navbar(props: Props): ReactElement {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
     <div >
       <div className="flex justify-between  px-4 text-2xl text-white pt-3 fixed top-0 z-40 ">
@@ -27,7 +28,7 @@ function Navbar(props: Props): ReactElement {
       </div>
       <div className="text-white top-3 right-5 text-3xl fixed z-40">
         <Link href="/">
-          <i className="fas fa-home "></i>
+          <h1>Home</h1>
         </Link>
       </div>
     </div>

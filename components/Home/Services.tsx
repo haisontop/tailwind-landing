@@ -37,40 +37,40 @@ const Services = () => {
             customer experience{" "}
           </h1>
         </div>
-        <div className="overflow-hidden">
-          <div className="grid md:grid-cols-4  gap-4">
-            <div className="bg-red-900  text-white py-6 rounded-full">
+        <div className="overflow-hidden main-box">
+          <div className="flex gap-4 first-slide">
+            <div className="bg-red-900  text-white py-6 rounded-full w-full">
               <h1 className="text-4xl">Development</h1>
             </div>
-            <div className="bg-yellow-600 text-black py-5 rounded-full">
+            <div className="bg-yellow-600 text-black py-5 rounded-full w-full">
               <h1 className="text-4xl">Digital strategy</h1>
             </div>
-            <div className="bg-green-900 text-white py-5 rounded-full">
+            <div className="bg-green-900 text-white py-5 rounded-full w-full">
               <h1 className="text-2xl">Digital transformation</h1>
             </div>
-            <div className="bg-black text-white py-5 rounded-full border-4 border-white border-opacity-100">
+            <div className="bg-black text-white py-5 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-4xl">Elements</h1>
             </div>
           </div>
-          <div className="grid md:grid-cols-3  gap-4 mt-6">
-            <div className="bg-black text-white py-5 rounded-full border-4 border-white border-opacity-100">
+          <div className="flex gap-4 mt-6 seccond-slide">
+            <div className="bg-black text-white py-5 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-3xl">Markating + Advertising</h1>
             </div>
-            <div className="bg-green-200 text-black py-5 rounded-full">
+            <div className="bg-green-200 text-black py-5 rounded-full w-full">
               <h1 className="text-3xl">Customer journey making</h1>
             </div>
-            <div className="bg-red-900  text-white py-6 rounded-full">
+            <div className="bg-red-900  text-white py-6 rounded-full w-full">
               <h1 className="text-3xl">Merkating Automation</h1>
             </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-4 mt-6 -mr-60">
-            <div className="bg-green-900 text-white py-5 rounded-full">
+          <div className="flex gap-4 mt-6 -mr-60 seccond-slide">
+            <div className="bg-green-900 text-white py-5 rounded-full w-full">
               <h1 className="text-3xl">E-Commerce</h1>
             </div>
-            <div className="bg-black text-white py-5 rounded-full border-4 border-white border-opacity-100">
+            <div className="bg-black text-white py-5 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-3xl">UX-Desing</h1>
             </div>
-            <div className="bg-yellow-600 text-black py-5 rounded-full">
+            <div className="bg-yellow-600 text-black py-5 rounded-full w-full">
               <h1 className="text-4xl">Workshop Facilitation</h1>
             </div>
           </div>

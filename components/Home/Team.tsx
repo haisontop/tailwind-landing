@@ -3,7 +3,7 @@ import React from "react";
 const Team = () => {
   return (
     <div>
-      <div className="grid md:grid-cols-2 text-white mt-36 md:ml-80 md:ml-40">
+      <div className="grid md:grid-cols-2 text-white mt-36 md:ml-80">
         <div className="flex justify-start">
           <div>
             <h1 className="md:text-5xl">The Team</h1>
