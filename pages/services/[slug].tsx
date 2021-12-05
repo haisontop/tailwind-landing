@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import ServiceBody from "../../components/Services/ServiceBody";
 import ServiceHeader from "../../components/Services/ServiceHeader";
-import ServiceOfering from "../../components/Services/ServiceOfering";
+import ServiceOfering from "../../components/Services/ServiceOffering";
 import ServiceSpaciality from "../../components/Services/ServiceSpaciality";
 
 const Services = () => {
