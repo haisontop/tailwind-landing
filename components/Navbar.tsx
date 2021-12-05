@@ -15,7 +15,7 @@ function Navbar(props: Props): ReactElement {
         <div>
           <ul className="list-none">
             <li>
-              <Link href="/services">Service</Link>
+              <Link href="/services/e-commerce">Service</Link>
             </li>
             <li className="mt-1">
               <Link href="/blogs">The Write up</Link>
