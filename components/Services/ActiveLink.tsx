@@ -1,22 +1,17 @@
-import { withRouter } from "next/router";
+import { useRouter, withRouter } from "next/router";
 import Link from "next/link";
 
-const ActiveLink = ({ router, href, children }) => {
-  (function prefetchPages() {
-    if (typeof window !== "undefined") {
-      router.prefetch(router.pathname);
-    }
-  })();
+interface ActiveLinkProps {
+  href: string;
+}
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    router.push();
-  };
+const ActiveLink: React.FC<ActiveLinkProps> = ({ href, children }) => {
+  const router = useRouter();
 
   const isCurrentpath = router.pathname === href || router.asPath === href;
 
   return (
-    <Link href={href} onClick={handleClick}>
+    <Link href={href}>
       <div
         style={{
           textDecoration: "none",
@@ -25,7 +20,7 @@ const ActiveLink = ({ router, href, children }) => {
           color: isCurrentpath && "#000",
           padding: "16px 0px",
           borderRadius: "50px",
-          cursor: 'pointer'
+          cursor: "pointer",
         }}
       >
         {children}
@@ -34,4 +29,4 @@ const ActiveLink = ({ router, href, children }) => {
   );
 };
 
-export default withRouter(ActiveLink);
+export default ActiveLink;
