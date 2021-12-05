@@ -13,3 +13,11 @@
 .main-box:hover .seccond-slide {
   transform: translate(-70px);
 }
+
+.top-b-t-n {
+  transition: transform 0.50s;
+}
+
+.top-b-t-n:hover {
+  transform: translateY(-7px);
+}

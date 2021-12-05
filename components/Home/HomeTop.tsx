@@ -13,7 +13,7 @@ const HomeTop = () => {
               LET'S TAKE OFF
             </button>{" "}
             <button className="bg-blue-300 text-3xl md:w-36 py-1 rounded-full">
-              <i className="fas fa-arrow-down text-black "></i>{" "}
+              <p className="top-b-t-n">🔰</p>{" "}
             </button>
           </div>
         </div>
