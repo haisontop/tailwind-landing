@@ -1,19 +1,20 @@
 import React from 'react';
+import ActiveLink from "./ActiveLink"
 const ServiceHeader = () => {
     return (
-        <div className="grid grid-cols-4 text-center gap-4">
-            <div className="my-3 py-3 bg-yellow-700 rounded-full">
-              <h1 className="text-1xl text-black">E-commerce</h1>
-            </div>
-            <div className="my-3 py-3 bg-transparent border-2 rounded-full">
-              <h1>Healthcare</h1>
-            </div>
-            <div className="my-3 py-3 bg-transparent border-2 rounded-full">
-              <h1>Blockchain</h1>
-            </div>
-            <div className="my-3 py-3 bg-transparent border-2 rounded-full">
-              <h1>Blockchain</h1>
-            </div>
+        <div className="grid grid-cols-4 text-center gap-7">
+           <ActiveLink href="/services">
+           E-commerce
+          </ActiveLink>
+            <ActiveLink  href="/services/health-care/ovpadrei&&d1566">
+             Healthcare
+            </ActiveLink>
+            <ActiveLink  href="/services/blog-chain/BlogChain">
+           Blockchain
+            </ActiveLink>
+            <ActiveLink  href="/services/saas/ovpadrei&&d1566">
+            Saas
+             </ActiveLink>
         </div>
     );
 };
