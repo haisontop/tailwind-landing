@@ -5,6 +5,7 @@ import Head from "next/head";
 import "../assets/styles/HomeAnimation.css"
 import "../assets/styles/index.css";
 import "../assets/styles/slides.css";
+import "../assets/styles/blogs.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
