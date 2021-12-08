@@ -26,7 +26,7 @@ const Blogs = () => {
           <div className="sticky top-0">
             <h1 className="md:text-6xl text-4xl">The Write Up</h1>
             <p className="md:my-10 md-5"></p>
-            <button className="bg-yellow-600 text-black py-5 my-6 md:my-0 rounded-full text-3xl px-10">
+            <button className="bg-yellow-600 text-black py-3 md:py-5 my-10 md:my-0 rounded-full text-3xl px-10">
               READ ALL
             </button>
           </div>
