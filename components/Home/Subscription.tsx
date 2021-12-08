@@ -50,7 +50,7 @@ const Subscription = () => {
         </h1>
       </div>
       <div className="flex justify-center mt-36 md:mx-60">
-        <div className="border-4 border-light-blue-500 border-opacity-100 px-10 md:px-20 py-6 md:py-10 rounded-full w-full">
+        <div className="border-4 border-light-blue-500 border-opacity-100 px-10 md:px-20 py-6 md:py-10 rounded-full w-full mx-3">
           <h1 className="md:text-2xl text-center">
             Stay in touch subscribebing to our newsletter
           </h1>

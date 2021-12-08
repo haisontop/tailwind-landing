@@ -5,7 +5,7 @@ const Team = () => {
     <div>
       <div className="grid grid-cols-2 text-white mt-36 md:ml-80">
         <div className="flex justify-start">
-          <div>
+          <div className="ml-5 md:ml-0">
             <h1 className="text-3xl md:text-5xl">The Team</h1>
             <p className="py-10">
               Co-Founders Rob Nathan are firm <br /> belevers in business as a

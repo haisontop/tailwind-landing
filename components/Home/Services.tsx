@@ -3,7 +3,7 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <div className="text-white text-center px-10 my-36 md:my-0 md:px-0 sm:py-10 md:py-20 md:mx-80">
+      <div className="text-white text-center px-7 my-36 md:my-0 md:px-0 sm:py-10 md:py-20 md:mx-80">
         <div className="mt-10 text-left pr-10 md:pr-80">
           <h1 className="text-4xl md:text-5xl">
             <span className="text-yellow-600">Digital poineers,</span> <br /> at your service
@@ -42,7 +42,7 @@ const Services = () => {
             <div className="bg-red-900 my-auto text-white py-6 px-5 rounded-full w-full">
               <h1 className="text-2xl md:text-4xl">Development</h1>
             </div>
-            <div className="bg-yellow-600 text-black py-5 px-12 rounded-full w-full">
+            <div className="bg-yellow-600 text-black py-1 px-14 rounded-full w-full">
               <h1 className="text-2xl md:text-4xl">Digital strategy</h1>
             </div>
             <div className="bg-green-900 text-white px-6 py-5 rounded-full w-full">
@@ -53,7 +53,7 @@ const Services = () => {
             </div>
           </div>
           <div className="flex gap-4 mt-6 seccond-slide">
-            <div className="bg-black text-white px-10 py-5 rounded-full border-4 border-white border-opacity-100 w-full">
+            <div className="bg-black text-white px-14 py-1 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="md:text-3xl">Markating + Advertising</h1>
             </div>
             <div className="bg-green-200 text-black px-20 py-3 rounded-full w-full">
