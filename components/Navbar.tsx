@@ -11,7 +11,7 @@ function Navbar(props: Props): ReactElement {
 
   return (
     <div>
-      <div className="flex justify-between  px-4 text-2xl text-white pt-3 fixed top-0 z-40 ">
+      <div className="flex justify-between md:px-4 text-2xl text-white pt-3 fixed top-0 z-40 left-5">
         <div>
           <ul className="list-none">
             <li>
@@ -27,7 +27,7 @@ function Navbar(props: Props): ReactElement {
         </div>
         <div> </div>
       </div>
-      <div className="text-white top-3 right-5 text-3xl fixed z-40 cursor-pointer">
+      <div className="text-white top-3 right-5 md:text-3xl fixed z-40 cursor-pointer">
         <Link href="/">
           <h1>{showLogo ? "Home" : "COMMET"}</h1>
         </Link>

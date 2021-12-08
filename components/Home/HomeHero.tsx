@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 
 export default function HomeHero() {
   return (
-    <div className="home-hero-slide">
+    <div className="home-hero-slide mt-14 md:mt-0">
       <Carousel
         showThumbs={false}
         autoPlay={false}

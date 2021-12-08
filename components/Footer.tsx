@@ -5,7 +5,7 @@ function Footer(): ReactElement {
     <footer className="relative pt-8 pb-6 bg-black">
       <div className="text-white flex justify-center md:mt-36 pb-10 md:mx-80">
         <div className="w-full">
-          <h1 className="md:text-7xl">
+          <h1 className="text-4xl md:text-7xl">
             Is your business <br />
             ready to take off?
             <br /> Let's Chat.

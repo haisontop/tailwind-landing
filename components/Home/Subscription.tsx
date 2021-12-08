@@ -4,8 +4,8 @@ import Link from "next/link";
 const Subscription = () => {
   return (
     <div className="text-white mt-52 mb-36">
-      <div className="md:mx-80">
-        <h1 className="md:text-6xl text-center">
+      <div className="mx-5 md:mx-80">
+        <h1 className="text-4xl md:text-6xl text-center">
           We work in variety of industries and have strong experience
           <div className="flex justify-center flex-wrap w-full">
             serving
@@ -50,11 +50,11 @@ const Subscription = () => {
         </h1>
       </div>
       <div className="flex justify-center mt-36 md:mx-60">
-        <div className="border-4 border-light-blue-500 border-opacity-100 px-20 py-10 rounded-full w-full">
-          <h1 className="text-2xl text-center">
+        <div className="border-4 border-light-blue-500 border-opacity-100 px-10 md:px-20 py-6 md:py-10 rounded-full w-full">
+          <h1 className="md:text-2xl text-center">
             Stay in touch subscribebing to our newsletter
           </h1>
-          <div className="mt-12 flex justify-between border-b-2 pb-3">
+          <div className="md:mt-12 mt-7 flex justify-between border-b-2 pb-2 md:pb-3">
             <input
               type="email"
               placeholder="Email Address"

@@ -20,13 +20,13 @@ const HomeBlog = ({ title, description, imagePath }: HomeBlogProps) => {
 
 const Blogs = () => {
   return (
-    <div className="text-white mx-64">
-      <div className="grid grid-cols-2">
+    <div className="text-white md:mx-64 mx-6">
+      <div className="grid md:grid-cols-2">
         <div>
           <div className="sticky top-0">
-            <h1 className="md:text-6xl">The Write Up</h1>
-            <p className="my-10"></p>
-            <button className="bg-yellow-600 text-black py-5 rounded-full text-3xl px-10">
+            <h1 className="md:text-6xl text-4xl">The Write Up</h1>
+            <p className="md:my-10 md-5"></p>
+            <button className="bg-yellow-600 text-black py-5 my-6 md:my-0 rounded-full text-3xl px-10">
               READ ALL
             </button>
           </div>
