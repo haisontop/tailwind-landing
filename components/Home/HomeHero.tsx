@@ -19,19 +19,19 @@ export default function HomeHero() {
         centerSlidePercentage={40}
       >
         <div>
-          <img src="https://images.unsplash.com/photo-1586083702768-190ae093d34d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
+          <img src="images/1912022.jpeg" />
         </div>
         <div>
-          <img src="https://i.pinimg.com/564x/e2/29/5f/e2295f7b9b470f873d0cc4b088ac0726.jpg" />
+          <img src="images/pexels-fauxels-3183180.jpg" />
         </div>
         <div>
-          <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+          <img src="images/pexels-oladimeji-ajegbile-2698465.jpg" />
         </div>
         <div>
-          <img src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+          <img src="images/pexels-fauxels-3184465.jpg" />
         </div>
         <div>
-          <img src="https://media.istockphoto.com/photos/studio-portrait-of-a-man-in-a-suit-picture-id1301253805?b=1&k=20&m=1301253805&s=170667a&w=0&h=HaXLECZux7kHOvkC-ZGzNU5hUauzNFdJSkRKazGjUpI=" />
+          <img src="images/pexels-edmond-dantès-4342098.jpg" />
         </div>
       </Carousel>
     </div>
