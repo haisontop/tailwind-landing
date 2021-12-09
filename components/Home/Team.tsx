@@ -22,7 +22,7 @@ const Team = () => {
         </div>
         <div className="mx-auto">
           <img
-            src="images/home/Robert Scott_Astronaut CX.png"
+            src="images/home/Robert-Scott_Astronaut-CX.png"
             alt=""
             width="90%"
           />
