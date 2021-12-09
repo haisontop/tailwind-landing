@@ -22,7 +22,7 @@ const IndexPage = ({ blogs, team }) => {
 
 export async function getStaticProps(context) {
   const blogs = await client.fetch(
-    `*[_type == "blog"]{
+    `*[_type == "blog"][0..2]{
       title,
       preview,
       slug,

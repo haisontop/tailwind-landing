@@ -1,21 +1,36 @@
 import React from "react";
 import { MOCK_BLOGS } from "../../constants/mockBlogs";
 import BlogCard from "./BlogCard";
+import { SanityImageAssetDocument } from "@sanity/client";
 
-const BlogsList = () => {
+type Blog = {
+  title: string;
+  _createdAt: string;
+  slug: string;
+  preview: string;
+  publishedAt: Date;
+  mainImage: SanityImageAssetDocument;
+  body: any;
+};
+
+interface BlogListProps {
+  blogs: Blog[];
+}
+
+const BlogsList = ({ blogs }: BlogListProps) => {
   return (
     <div className="pb-5 md:pb-0">
       <div className="grid md:grid-cols-2 gap-10 mt-10 px-5 md:px-0">
-        {MOCK_BLOGS.map((blog) => (
+        {blogs.map((blog) => (
           <BlogCard
             key={blog.slug}
             title={blog.title}
-            createdAt={blog.createdAt}
-            description={blog.description}
-            imagePath={blog.imagePath}
+            _createdAt={blog._createdAt}
+            preview={blog.preview}
+            body={blog.body}
+            imagePath={blog.mainImage.asset.url}
           />
         ))}
-
       </div>
       <div className="flex justify-center mt-32">
         <p className="mx-5 text-2xl">1</p>
