@@ -14,7 +14,7 @@ const BlogCard = (props: BlogCardProps) => {
   return (
     <div className="flex flex-col items-start">
       <img src={imagePath} alt="" width="100%" />
-      <p className="text-2xl">{createdAt}</p>
+      <p className="text-2xl mt-2">{createdAt}</p>
       <h1 className="text-3xl mt-5">{title}</h1>
       <p className="my-3">{description}</p>
       <button className="text-2xl">READ MORE</button>

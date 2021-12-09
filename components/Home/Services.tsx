@@ -42,8 +42,8 @@ const Services = () => {
             <div className="bg-red-900 my-auto text-white py-6 px-5 rounded-full w-full">
               <h1 className="text-2xl md:text-4xl">Development</h1>
             </div>
-            <div className="bg-yellow-600 text-black py-1 px-14 rounded-full w-full">
-              <h1 className="text-2xl md:text-4xl">Digital strategy</h1>
+            <div className="bg-yellow-600 text-black py-5 px-14 rounded-full w-full">
+              <h1 className="text-1xl md:text-4xl">Digital strategy</h1>
             </div>
             <div className="bg-green-900 text-white px-6 py-5 rounded-full w-full">
               <h1 className="md:text-2xl">Digital transformation</h1>
@@ -53,7 +53,7 @@ const Services = () => {
             </div>
           </div>
           <div className="flex gap-4 mt-6 seccond-slide">
-            <div className="bg-black text-white px-14 py-1 rounded-full border-4 border-white border-opacity-100 w-full">
+            <div className="bg-black text-white px-14 py-6 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="md:text-3xl">Markating + Advertising</h1>
             </div>
             <div className="bg-green-200 text-black px-20 py-3 rounded-full w-full">

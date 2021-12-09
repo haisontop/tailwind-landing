@@ -2,12 +2,12 @@ import React from "react";
 
 const ServiceOffering = () => {
   return (
-    <div>
-      <div className="grid grid-cols-2">
-        <div className="text-center text-white">
+    <div className="px-5 md:px-0">
+      <div className="grid md:grid-cols-2">
+        <div className="md:text-center text-white">
           <h1 className="text-4xl sticky top-2">Our offering</h1>
         </div>
-        <div>
+        <div className="mt-10 md:mt-0">
           <div>
             <h2 className="text-4xl mb-5">Software integration</h2>
             <p>

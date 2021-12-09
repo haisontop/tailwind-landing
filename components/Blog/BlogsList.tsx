@@ -4,8 +4,8 @@ import BlogCard from "./BlogCard";
 
 const BlogsList = () => {
   return (
-    <div>
-      <div className="grid grid-cols-2 gap-10 mt-10">
+    <div className="pb-5 md:pb-0">
+      <div className="grid md:grid-cols-2 gap-10 mt-10 px-5 md:px-0">
         {MOCK_BLOGS.map((blog) => (
           <BlogCard
             key={blog.slug}

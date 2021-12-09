@@ -12,8 +12,8 @@ const HomeTop = () => {
             <button className="text-black w-40 py-5 mr-2 rounded-full bg-yellow-700 md:w-60 md:mr-5">
               LET'S TAKE OFF
             </button>{" "}
-            <button className="bg-blue-300 px-14 md:px-0 text-3xl  w-40 md:py-1 rounded-full">
-              <p className="top-b-t-n">🔰</p>{" "}
+            <button className="bg-blue-300 px-20 md:py-1 rounded-full">
+              <img src="images/home/downArrow.png" width="80%" className="top-b-t-n" />{" "}
             </button>
           </div>
         </div>
