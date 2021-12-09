@@ -43,7 +43,7 @@ const Services = () => {
               <h1 className="text-2xl md:text-4xl">Development</h1>
             </div>
             <div className="bg-yellow-600 text-black py-5 px-14 rounded-full w-full">
-              <h1 className="text-1xl md:text-4xl">Digital strategy</h1>
+              <h1 className="text-2xl md:text-4xl">Digital strategy</h1>
             </div>
             <div className="bg-green-900 text-white px-6 py-5 rounded-full w-full">
               <h1 className="md:text-2xl">Digital transformation</h1>
