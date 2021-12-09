@@ -5,17 +5,60 @@ import Services from "../components/Home/Services";
 import Subscription from "../components/Home/Subscription";
 import Team from "../components/Home/Team";
 import Layout from "../components/Layout";
+import client from "../client";
 
-const IndexPage = () => (
-  <Layout title="COMET">
-    <HomeTop />
-    <HomeHero />
-    <Services />
-    <Team />
-    <Subscription />
-    <Blogs />
-  </Layout>
-);
+const IndexPage = ({ blogs, team }) => {
+  return (
+    <Layout title="COMET">
+      <HomeTop />
+      <HomeHero />
+      <Services />
+      <Team team={team} />
+      <Subscription />
+      <Blogs blogs={blogs} />
+    </Layout>
+  );
+};
+
+export async function getStaticProps(context) {
+  const blogs = await client.fetch(
+    `*[_type == "blog"]{
+      title,
+      preview,
+      slug,
+      mainImage {
+        asset -> {
+          _id,
+          url
+        }
+      }
+    }`
+  );
+
+  let teamData = await client.fetch(`
+  *[_type == "team"]{
+    title,
+    description,
+    team_images[]{
+      asset -> {
+        _id,
+        url
+      }
+    }
+  }
+  `);
+
+  const team = {
+    ...teamData[0],
+    team_images: teamData[0].team_images.map((image) => image.asset.url),
+  };
+
+  return {
+    props: {
+      blogs,
+      team,
+    },
+  };
+}
 
 export default IndexPage;
-
