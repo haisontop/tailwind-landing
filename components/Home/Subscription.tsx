@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Subscription = () => {
   return (
-    <div className="text-white mt-52 mb-36">
+    <div className="text-white my-32 md:mt-52 md:mb-36">
       <div className="mx-5 md:mx-80">
         <h1 className="text-4xl md:text-6xl text-center">
           We work in variety of industries and have strong experience
