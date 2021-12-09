@@ -35,7 +35,7 @@ export async function getStaticProps(context) {
     }`
   );
 
-  let teamData = await client.fetch(`
+  const teamData = await client.fetch(`
   *[_type == "team"]{
     title,
     description,
@@ -58,6 +58,7 @@ export async function getStaticProps(context) {
       blogs,
       team,
     },
+    revalidate: 60,
   };
 }
 

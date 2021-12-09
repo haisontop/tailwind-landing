@@ -1,24 +1,25 @@
 import React from "react";
+import BlockContent from "@sanity/block-content-to-react";
 
-const SlugHeader = () => {
+interface BlogHeaderProps {
+  title: string;
+  createdAt: string;
+  mainImage: string;
+  body: any;
+}
+
+const SlugHeader = ({ title, createdAt, mainImage, body }: BlogHeaderProps) => {
   return (
     <div className=" text-white pt-10">
       <div className="md:px-32">
-        <h1 className="text-5xl">The future of CX</h1>
-        <p className="mt-10 text-2xl">NOVEMBER 2021</p>
+        <h1 className="text-5xl">{title}</h1>
+        <p className="mt-10 text-2xl">{new Date(createdAt).toUTCString()}</p>
         <p className="mt-5">
-          {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto{" "}
-          <br /> ratione impedit reprehenderit saepe repellat autem optio <br />{" "}
-          officiis mollitia tenetur corporis temporibus.
+          <BlockContent blocks={body} />
         </p>
       </div>
-      <div className="mt-10">
-        <img
-          src="https://thumbs.dreamstime.com/b/men-hair-beauty-handsome-man-model-black-hair-beard-men-hair-beauty-handsome-man-model-black-hair-beard-blue-125031222.jpg"
-          width="100%"
-          alt=""
-        />
+      <div className="mt-10 w-full lg:w-1/2 mx-auto">
+        <img src={mainImage} width="100%" alt="" />
       </div>
     </div>
   );

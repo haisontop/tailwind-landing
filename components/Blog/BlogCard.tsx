@@ -1,7 +1,9 @@
 import React from "react";
+import Link from "next/link";
 
 interface BlogCardProps {
   _createdAt: string;
+  slug: string;
   title: string;
   body: any;
   preview: string;
@@ -9,7 +11,7 @@ interface BlogCardProps {
 }
 
 const BlogCard = (props: BlogCardProps) => {
-  const { imagePath, title, preview, _createdAt } = props;
+  const { imagePath, title, preview, _createdAt, slug } = props;
 
   return (
     <div className="flex flex-col items-start">
@@ -17,7 +19,9 @@ const BlogCard = (props: BlogCardProps) => {
       <p className="text-2xl mt-2">{new Date(_createdAt).toUTCString()}</p>
       <h1 className="text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
-      <button className="text-2xl">READ MORE</button>
+      <Link href={`/blog/${slug}`}>
+        <a className="text-2xl">READ MORE</a>
+      </Link>
     </div>
   );
 };

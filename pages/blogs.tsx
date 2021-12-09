@@ -21,7 +21,7 @@ export async function getStaticProps(context) {
       _createdAt,
       publishedAt,
       preview,
-      slug,
+      slug ,
       mainImage {
         asset -> {
           _id,

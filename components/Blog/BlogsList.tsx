@@ -1,12 +1,13 @@
 import React from "react";
-import { MOCK_BLOGS } from "../../constants/mockBlogs";
+// import { MOCK_BLOGS } from "../../constants/mockBlogs";
 import BlogCard from "./BlogCard";
 import { SanityImageAssetDocument } from "@sanity/client";
+import { Slug } from "../../constants/types";
 
 type Blog = {
   title: string;
   _createdAt: string;
-  slug: string;
+  slug: Slug;
   preview: string;
   publishedAt: Date;
   mainImage: SanityImageAssetDocument;
@@ -23,7 +24,8 @@ const BlogsList = ({ blogs }: BlogListProps) => {
       <div className="grid md:grid-cols-2 gap-10 mt-10 px-5 md:px-0">
         {blogs.map((blog) => (
           <BlogCard
-            key={blog.slug}
+            slug={blog.slug.current}
+            key={blog.slug.current}
             title={blog.title}
             _createdAt={blog._createdAt}
             preview={blog.preview}
