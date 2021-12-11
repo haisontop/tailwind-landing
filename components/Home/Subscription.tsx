@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Subscription = () => {
   return (
-    <div className="text-white my-32 md:mt-52 md:mb-36">
+    <div className="text-white my-24 md:my-32 md:mt-52 md:mb-36">
       <div className="mx-5 md:mx-80">
         <h1 className="text-4xl md:text-6xl text-center">
           We work in variety of industries and have strong experience
@@ -12,7 +12,9 @@ const Subscription = () => {
             <Link href="/services/e-commerce">
               <a
                 href="#pablo"
-                className={"font-normal underline ml-2 whitespace-nowrap bg-transparent"}
+                className={
+                  "font-normal underline ml-2 whitespace-nowrap bg-transparent"
+                }
               >
                 E-commerce
               </a>
@@ -21,7 +23,9 @@ const Subscription = () => {
             <Link href="/services/healthcare">
               <a
                 href="#pablo"
-                className={"font-normal underline ml-2 whitespace-nowrap bg-transparent"}
+                className={
+                  "font-normal underline ml-2 whitespace-nowrap bg-transparent"
+                }
               >
                 Healthcare
               </a>
@@ -41,7 +45,9 @@ const Subscription = () => {
             <Link href="/services/sass">
               <a
                 href="#pablo"
-                className={"font-normal underline ml-2 whitespace-nowrap bg-transparent"}
+                className={
+                  "font-normal underline ml-2 whitespace-nowrap bg-transparent"
+                }
               >
                 Sass
               </a>
@@ -51,7 +57,7 @@ const Subscription = () => {
       </div>
       <div className="flex justify-center mt-36 md:mx-60">
         <div className="border-4 border-light-blue-500 border-opacity-100 px-10 md:px-20 py-6 md:py-10 rounded-full w-full mx-3">
-          <h1 className="md:text-2xl text-center">
+          <h1 className="text-xs md:text-2xl text-center">
             Stay in touch subscribebing to our newsletter
           </h1>
           <div className="md:mt-12 mt-7 flex justify-between border-b-2 pb-2 md:pb-3">
@@ -60,8 +66,9 @@ const Subscription = () => {
               placeholder="Email Address"
               className="bg-transparent outline-none"
             />
-            <button>BLAST OFF</button>
+            <button className="hidden md:block">BLAST OFF</button>
           </div>
+          <button className="block md:hidden mx-auto mt-2">BLAST OFF</button>
         </div>
       </div>
     </div>

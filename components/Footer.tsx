@@ -11,21 +11,33 @@ function Footer(): ReactElement {
             <br /> Let's Chat.
           </h1>
           <form className="mt-20">
-            <input type="text" placeholder="NAME" className="border-2 bg-transparent border-white px-4 block w-full py-3 rounded-full" />
-            <input type="email" placeholder="EMAIL" className="my-6 border-2 bg-transparent border-white px-4 block w-full py-3 rounded-full" />
-            <textarea placeholder="HOW CAN WE HELP?" className="my-6 border-2 bg-transparent border-white px-4 block w-full py-3 rounded-lg" />
+            <input
+              type="text"
+              placeholder="NAME"
+              className="border-2 bg-transparent border-white px-4 block w-full py-3 rounded-full placeholder:text-white"
+            />
+            <input
+              type="email"
+              placeholder="EMAIL"
+              className="my-6 border-2 bg-transparent border-white px-4 block w-full py-3 rounded-full placeholder:text-white"
+            />
+            <textarea
+              rows={4}
+              placeholder="HOW CAN WE HELP?"
+              className="my-6 border-2 bg-transparent border-white px-4 block w-full py-3 rounded-3xl placeholder:text-white"
+            />
             <div className="flex">
-              <button className="bg-yellow-600 text-black py-5 rounded-full md:text-2xl px-10 mt-10 mr-5">
+              <button className="bg-primary text-black py-3 md:py-5 rounded-full md:text-2xl px-10 mt-10 mr-5">
                 SUBMIT
               </button>
-              <button className="bg-green-100 text-black py-5 rounded-full md:text-2xl px-10 mt-10">
+              <button className="bg-green-100 text-black py-3 md:py-5 rounded-full md:text-2xl px-10 mt-10">
                 02 9745 9864
               </button>
             </div>
           </form>
         </div>
       </div>
-    </footer >
+    </footer>
   );
 }
 

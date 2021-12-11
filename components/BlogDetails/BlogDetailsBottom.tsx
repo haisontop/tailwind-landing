@@ -35,7 +35,7 @@ const BlogDetailsBottom = () => {
           </p>
         </div>
         <div>
-          <button className="bg-yellow-600 text-black py-3 rounded-full text-2xl px-10 mt-10 mr-5">
+          <button className="bg-primary text-black py-3 rounded-full text-2xl px-10 mt-10 mr-5">
             Back to all article
           </button>
           <button className="bg-black text-white py-5 rounded-full border-2 md:w-96 mt-5 border-white border-opacity-100">

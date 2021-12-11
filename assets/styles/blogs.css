@@ -1,3 +1,17 @@
 .home-blog-image {
   max-height: 434px;
 }
+
+.custom-button-group {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.container-padding-bottom {
+  padding-bottom: 80px;
+}
