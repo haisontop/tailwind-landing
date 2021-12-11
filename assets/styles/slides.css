@@ -1,3 +1,74 @@
-.home-hero-slide .slider-wrapper {
-  max-height: 500px;
+.home-hero-slide {
+  max-height: 620px;
+  min-height: 260px;
+}
+
+.home-hero-slide-container {
+  min-height: 260px;
+  max-height: 620px;
+}
+
+.home-hero-slide-container img {
+  height: 620px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-hero-slide-container .react-multi-carousel-item--active {
+  height: 475px;
+}
+
+.home-hero-slide-container .react-multi-carousel-item--active img {
+  height: 475px;
+}
+
+.home-hero-slide-container .react-multi-carousel-track {
+  align-items: center;
+}
+
+.home-hero-slide-container .react-multi-carousel-item {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-hero-slide-container img {
+    height: 260px;
+  }
+
+  .home-hero-slide-container .react-multi-carousel-item--active {
+    height: 190px;
+  }
+
+  .home-hero-slide-container .react-multi-carousel-item--active img {
+    height: 190px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .home-hero-slide-container img {
+    height: 260px;
+  }
+
+  .home-hero-slide-container .react-multi-carousel-item--active {
+    height: 190px;
+  }
+
+  .home-hero-slide-container .react-multi-carousel-item--active img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 639px) {
+  .home-hero-slide-container img {
+    height: 260px;
+  }
+
+  .home-hero-slide-container .react-multi-carousel-item--active {
+    height: 190px;
+  }
+
+  .home-hero-slide-container .react-multi-carousel-item--active img {
+    height: 190px;
+  }
 }

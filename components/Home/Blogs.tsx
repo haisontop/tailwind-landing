@@ -15,15 +15,14 @@ interface HomeBlogProps {
 
 const HomeBlog = ({ title, preview, mainImage, slug }: HomeBlogProps) => {
   return (
-    <>
+    <div className="mr-4 md:mr-0">
       <img src={mainImage.asset.url} width="100%" className="home-blog-image" />
-      <h1 className="text-3xl mt-5">{title}</h1>
+      <h1 className="text-xl md:text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
-
       <Link href={`/blog/${slug.current}`}>
-        <a className="text-2xl">READ MORE</a>
+        <a className="text-sm md:text-2xl">READ MORE</a>
       </Link>
-    </>
+    </div>
   );
 };
 
@@ -88,6 +87,7 @@ const Blogs = ({ blogs }) => {
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      partialVisibilityGutter: 60
     },
   };
 
@@ -123,6 +123,7 @@ const Blogs = ({ blogs }) => {
           containerClass="container-padding-bottom"
           arrows={false}
           customButtonGroup={<CustomButtonGroup />}
+          partialVisible={true}
         >
           {blogs.map((blog) => (
             <HomeBlog
