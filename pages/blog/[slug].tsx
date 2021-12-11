@@ -7,15 +7,27 @@ import BlogDetailsMid from "../../components/BlogDetails/BlogDetailsMid";
 import BlogDetailsTop from "../../components/BlogDetails/BlogDetailsTop";
 import client from "../../client";
 
-const Blog = ({ blog }) => {
+interface BlogProps {
+  mainImage?: string;
+  body?: any;
+  title?: string;
+  _createdAt?: string;
+}
+
+const Blog = ({
+  body = "",
+  title = "",
+  _createdAt = "",
+  mainImage = "",
+}: BlogProps) => {
   return (
     <Layout>
       <div className="bg-black md:px-16 text-white">
         <BlogDetailsHeader
-          body={blog.body}
-          mainImage={blog.mainImage}
-          title={blog.title}
-          createdAt={blog._createdAt}
+          body={body}
+          mainImage={mainImage}
+          title={title}
+          createdAt={_createdAt}
         ></BlogDetailsHeader>
         <BlogDetailsTop></BlogDetailsTop>
         <BlogDetailsMid></BlogDetailsMid>
