@@ -26,8 +26,12 @@ const HomeBlog = ({ title, preview, mainImage, slug }: HomeBlogProps) => {
   );
 };
 
-const CustomButtonGroup = ({ next, previous, goToSlide, carouselState }) => {
-  const { totalItems, currentSlide } = carouselState;
+interface CustomButtonGroupProps {
+  next?: () => void;
+  previous?: () => void;
+}
+
+const CustomButtonGroup = ({ next, previous }: CustomButtonGroupProps) => {
   return (
     <div className="custom-button-group">
       <button
@@ -49,7 +53,10 @@ const CustomButtonGroup = ({ next, previous, goToSlide, carouselState }) => {
           />
         </svg>
       </button>
-      <button onClick={() => next()} className="ml-2 border border-white rounded-2xl border-solid py-3 px-5">
+      <button
+        onClick={() => next()}
+        className="ml-2 border border-white rounded-2xl border-solid py-3 px-5"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="17.124"
@@ -87,7 +94,7 @@ const Blogs = ({ blogs }) => {
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      partialVisibilityGutter: 60
+      partialVisibilityGutter: 60,
     },
   };
 
