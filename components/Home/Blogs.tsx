@@ -100,14 +100,16 @@ const Blogs = ({ blogs }) => {
 
   return (
     <div className="text-white md:mx-64 mx-6">
-      <div className="grid md:grid-cols-2">
-        <div className="md:sticky md:top-0 flex flex-col">
-          <h1 className="md:text-6xl text-4xl mb-2 md:mb-15">The Write Up</h1>
-          <Link href="/blogs">
-            <a className="bg-primary text-black py-3 md:py-5 md:my-0 rounded-full text-xl md:text-3xl px-10 top-7 w-max">
-              READ ALL
-            </a>
-          </Link>
+      <div className="grid md:grid-cols-2 pb-12 md:pb-0">
+        <div className="flex flex-col">
+          <div className="md:sticky md:top-0">
+            <h1 className="md:text-6xl text-4xl mb-2 md:mb-15">The Write Up</h1>
+            <Link href="/blogs">
+              <a className="bg-primary text-black py-3 md:py-5 md:my-0 rounded-full text-xl md:text-3xl px-10 top-7 w-max relative">
+                READ ALL
+              </a>
+            </Link>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-16 mt-32 md:mt-0 hidden md:block">
