@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         primary: "#F5632E",
       },
+      zIndex: {
+        '1001': 1001
+      }
     },
   },
   variants: {
