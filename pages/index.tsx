@@ -7,11 +7,11 @@ import Team from "../components/Home/Team";
 import Layout from "../components/Layout";
 import client from "../client";
 
-const IndexPage = ({ blogs, team }) => {
+const IndexPage = ({ blogs, team, heroImages }) => {
   return (
     <Layout title="COMET">
       <HomeTop />
-      <HomeHero />
+      <HomeHero heroImages={heroImages} />
       <Services />
       <Team team={team} />
       <Subscription />
@@ -48,6 +48,17 @@ export async function getStaticProps(context) {
   }
   `);
 
+  const heroData = await client.fetch(`
+  *[_type == "hero"]{
+    hero_images[]{
+      asset -> {
+        _id,
+        url
+      }
+    }
+  }
+  `);
+
   const team = {
     ...teamData[0],
     team_images: teamData[0].team_images.map((image) => image.asset.url),
@@ -57,6 +68,7 @@ export async function getStaticProps(context) {
     props: {
       blogs,
       team,
+      heroImages: heroData[0].hero_images.map((image) => image.asset.url),
     },
     revalidate: 60,
   };

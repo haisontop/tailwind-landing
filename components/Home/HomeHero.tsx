@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-export default function HomeHero() {
+export default function HomeHero({ heroImages }) {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -33,24 +33,11 @@ export default function HomeHero() {
         autoPlay
         infinite
       >
-        <div className="flex items-center h-full w-full">
-          <img src="images/1912022.jpeg" height="100%" />
-        </div>
-        <div className="flex items-center h-full w-full">
-          <img src="images/pexels-fauxels-3183180.jpg" height="100%" />
-        </div>
-        <div className="flex items-center h-full w-full">
-          <img
-            src="images/pexels-oladimeji-ajegbile-2698465.jpg"
-            height="100%"
-          />
-        </div>
-        <div className="flex items-center h-full w-full">
-          <img src="images/pexels-fauxels-3184465.jpg" height="100%" />
-        </div>
-        <div className="flex items-center h-full w-full">
-          <img src="images/pexels-edmond-dantès-4342098.jpg" height="100%" />
-        </div>
+        {heroImages.map((heroImage) => (
+          <div className="flex items-center h-full w-full" key={heroImage}>
+            <img src={heroImage} height="100%" />
+          </div>
+        ))}
       </Carousel>
     </div>
   );
