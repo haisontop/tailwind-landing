@@ -17,7 +17,7 @@ const ServiceSpaciality = () => {
                     <img src="https://i0.wp.com/akersdigital.com/wp-content/uploads/2019/06/Klaviyo-Partner.png?resize=600%2C200&ssl=1" width="90%" alt="" />
                 </div>
                 <div className="bg-white rounded-full flex justify-center">
-                    <img src="https://i0.wp.com/akersdigital.com/wp-content/uploads/2019/06/Klaviyo-Partner.png?resize=600%2C200&ssl=1" width="90%" alt="" />
+                    <img src="images/magentos.png" width="90%" alt="" />
                 </div>
             </div>
         </div>
