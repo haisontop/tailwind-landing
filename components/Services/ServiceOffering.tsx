@@ -1,77 +1,114 @@
 import React from "react";
-
+import Carousel from "react-multi-carousel";
+import { MOCK_SERVICE } from "./../../constants/mockservices"
+import ServiceCard from "./ServiceCard";
 const ServiceOffering = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 60,
+    },
+  };
+
+  interface CustomButtonGroupProps {
+    next?: () => void;
+    previous?: () => void;
+  }
+
+  const CustomButtonGroup = ({ next, previous }: CustomButtonGroupProps) => {
+    return (
+      <div className="custom-button-group">
+        <button
+          onClick={() => previous()}
+          className="border border-white rounded-2xl border-solid py-3 px-5"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17.124"
+            height="10.063"
+            viewBox="0 0 17.124 10.063"
+          >
+            <path
+              id="Path_11"
+              data-name="Path 11"
+              d="M4.716,0V15.076L.753,11.205,0,11.976l5.271,5.149,4.792-5.182-.791-.732L5.793,14.972V0Z"
+              transform="translate(17.125) rotate(90)"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+        <button
+          onClick={() => next()}
+          className="ml-2 border border-white rounded-2xl border-solid py-3 px-5"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17.124"
+            height="10.063"
+            viewBox="0 0 17.124 10.063"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M4.716,0V15.076L.753,11.205,0,11.976l5.271,5.149,4.792-5.182-.791-.732L5.793,14.972V0Z"
+              transform="translate(-0.001 10.063) rotate(-90)"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+      </div>
+    );
+  };
   return (
-    <div className="px-5 md:px-0">
-      <div className="grid md:grid-cols-2">
-        <div className="md:text-center text-white">
-          <h1 className="text-4xl sticky top-2">Our offering</h1>
-        </div>
-        <div className="mt-10 md:mt-0">
-          <div>
-            <h2 className="text-4xl mb-5">Software integration</h2>
-            <p>
-              Tecnology should work for you, not the other way <br /> round. we
-              can help you wave a powerful software <br /> ecosystem that gives
-              your customers amazing <br /> experiences and put world -class
-              capabilities in hands of your team.{" "}
-            </p>
-          </div>
-          <div className="mt-16">
-            <h2 className="text-4xl mb-5">Customer Data Strategy</h2>
-            <p>
-              Few industries have as much access to customer <br /> data as
-              e-comm.Let us help you build a strategy <br /> for data
-              collection, compliance, and <br /> management, protecting your
-              business and <br /> delighting your customers.{" "}
-            </p>
-          </div>
-          <div className="mt-16">
-            <h2 className="text-4xl mb-5">Marketing Automation</h2>
-            <p>
-              Leverage the power of your customers with responsive, real time{" "}
-              <br /> marketing based on their preference, <br /> interactions,
-              and preferred channels.
-            </p>
-          </div>
-          <div className="mt-16">
-            <h2 className="text-4xl mb-5">Customer Journeys</h2>
-            <p>
-              Lead your customers down the right path at every <br /> stage of
-              their journey.From acquisition to retention <br /> and win-back,
-              we'll help you craft cotextual <br /> messaging that keeps your
-              customers comming back <br />
-              again and again{" "}
-            </p>
-          </div>
-          <div className="mt-16">
-            <h2 className="text-4xl mb-5">Customer Journeys</h2>
-            <p>
-              Lead your customers down the right path at every <br /> stage of
-              their journey.From acquisition to retention <br /> and win-back,
-              we'll help you craft cotextual <br /> messaging that keeps your
-              customers comming back <br />
-              again and again{" "}
-            </p>
-          </div>
-          <div className="mt-16">
-            <h2 className="text-4xl mb-5">Omni-Channel Strategy</h2>
-            <p>
-              We'll help you surprise and delight your <br /> customers by
-              connecting your email, <br />
-              advertising,SMS,and support agent touch points into one consistent
-              and seamless experience.
-            </p>
-          </div>
-          <div className="mt-16">
-            <h2 className="text-4xl mb-5">Retention</h2>
-            <p>
-              Customer experience doesn't end with a sale.At <br /> Comet we'll
-              help you to turn your customer into <br /> raving fans and keep
-              them engaged with your <br /> brand, purchase after purchase.
-            </p>
+    <div className="text-white md:mx-10 mx-6">
+      <div className="grid md:grid-cols-2 pb-12 md:pb-0">
+        <div className="flex flex-col">
+          <div className="md:sticky md:top-0">
+            <h1 className="md:text-5xl text-3xl mb-2 md:mb-15">Our offering</h1>
           </div>
         </div>
+
+        <div className="grid grid-cols-1 gap-16 mt-32 md:mt-0 hidden md:block">
+          {MOCK_SERVICE.map((service) => (
+            <div className="">
+              <ServiceCard
+                key={service.key}
+                service={service}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mt-4 block md:hidden">
+        <Carousel
+          responsive={responsive}
+          ssr
+          containerClass="container-padding-bottom"
+          arrows={false}
+          customButtonGroup={<CustomButtonGroup />}
+          partialVisible={true}
+        >
+          {MOCK_SERVICE.map((service) => (
+            <ServiceCard
+              key={service.key}
+              service={service}
+            />
+          ))}
+        </Carousel>
       </div>
     </div>
   );

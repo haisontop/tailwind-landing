@@ -15,7 +15,7 @@ interface HomeBlogProps {
 
 const HomeBlog = ({ title, preview, mainImage, slug }: HomeBlogProps) => {
   return (
-    <div className="mr-4 md:mr-0">
+    <div className="mr-4 md:mr-0 md:mb-6">
       <img src={mainImage.asset.url} width="100%" className="home-blog-image" />
       <h1 className="text-xl md:text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
