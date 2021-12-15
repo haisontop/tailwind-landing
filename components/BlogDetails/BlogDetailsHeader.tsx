@@ -10,7 +10,7 @@ interface BlogHeaderProps {
 
 const SlugHeader = ({ title, createdAt, mainImage, body }: BlogHeaderProps) => {
   return (
-    <div className=" text-white pt-10">
+    <div className=" text-white pt-10 px-5 md:px-0">
       <div className="md:px-32">
         <h1 className="text-5xl">{title}</h1>
         <p className="mt-10 text-2xl">{new Date(createdAt).toUTCString()}</p>

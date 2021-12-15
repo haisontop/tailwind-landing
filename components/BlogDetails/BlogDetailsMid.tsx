@@ -2,8 +2,8 @@ import React from "react";
 
 const SlugMid = () => {
   return (
-    <div className="md:px-36">
-      <div className="grid grid-cols-2 gap-28">
+    <div className="md:px-36 px-5">
+      <div className="grid md:grid-cols-2 md:gap-28 gap-10">
         <div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
@@ -27,7 +27,7 @@ const SlugMid = () => {
             quis, dolorum eveniet quibusdam, unde ad! Eum libero nam.
           </p>
         </div>
-        <div>
+        <div className="flex justify-end md:justify-center">
           <img
             src="https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFuJTIwZmFjZXxlbnwwfHwwfHw%3D&w=1000&q=80"
             alt=""
@@ -35,7 +35,7 @@ const SlugMid = () => {
           />
         </div>
       </div>
-      <div className="mt-28">
+      <div className="mt-14 md:mt-28">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat modi
           doloribus delectus! Atque, iste iusto beatae molestiae non, delectus

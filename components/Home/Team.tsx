@@ -26,7 +26,7 @@ const Team = ({ team }: TeamProps) => {
           </div>
         </div>
         <div className="mx-auto">
-          <img src={team_images[1]} alt="" className="w-full md:w-96" />
+          <img src={team_images[1]} alt="" className="w-full md:w-80" />
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const slugTop = () => {
   return (
-    <div className="text-white md:px-36 mt-10 flex justify-center">
+    <div className="text-white px-5 md:px-36 mt-10 flex justify-center">
       <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum
@@ -36,7 +36,7 @@ const slugTop = () => {
           vero voluptatibus vitae maiores vel est harum pariatur, quia hic
           itaque, iste dolore voluptate officiis corporis.
         </p>
-        <h1 className="text-center text-5xl my-36">
+        <h1 className="text-center hidden md:block text-5xl my-36">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
           voluptates est repellat iste doloribus sit!"
         </h1>

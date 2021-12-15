@@ -3,7 +3,7 @@ import React from "react";
 const BlogDetailsBottom = () => {
   return (
     <>
-      <div className="md:px-36">
+      <div className=" px-5 md:px-36">
         <div className="mt-36">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi
@@ -35,10 +35,10 @@ const BlogDetailsBottom = () => {
           </p>
         </div>
         <div>
-          <button className="bg-primary text-black py-3 rounded-full text-2xl px-10 mt-10 mr-5">
+          <button className="bg-primary w-96 text-black py-4 rounded-full text-2xl md:px-10 mt-10 mr-5 ">
             Back to all article
           </button>
-          <button className="bg-black text-white py-5 rounded-full border-2 md:w-96 mt-5 border-white border-opacity-100">
+          <button className="bg-black text-white py-5 rounded-full border-2 w-96 mt-5 border-white border-opacity-100">
             Next up: So, what is the metaverse?
           </button>
         </div>
