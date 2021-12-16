@@ -34,7 +34,7 @@ const BlogsList = ({ blogs }: BlogListProps) => {
           />
         ))}
       </div>
-      <div className="flex justify-center mt-32">
+      <div className="flex justify-center mb-10 mt-10 md:mt-32 md:mb-0">
         <button
           className="border border-white rounded-2xl border-solid py-3 px-5"
         >

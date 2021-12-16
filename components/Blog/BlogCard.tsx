@@ -16,11 +16,11 @@ const BlogCard = (props: BlogCardProps) => {
   return (
     <div className="flex flex-col items-start">
       <img src={imagePath} alt="" width="100%" />
-      <p className="text-2xl mt-2">{new Date(_createdAt).toUTCString()}</p>
+      <p className="text-1xl mt-2">{new Date(_createdAt).toUTCString()}</p>
       <h1 className="text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
       <Link href={`/blog/${slug}`}>
-        <a className="text-2xl">READ MORE</a>
+        <a className="text-1xl md:text-2xl underline md:no-underline">READ MORE</a>
       </Link>
     </div>
   );

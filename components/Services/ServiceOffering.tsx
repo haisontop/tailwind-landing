@@ -78,11 +78,11 @@ const ServiceOffering = () => {
       <div className="grid md:grid-cols-2 pb-12 md:pb-0">
         <div className="flex flex-col">
           <div className="md:sticky md:top-0">
-            <h1 className="md:text-5xl text-3xl mb-2 md:mb-15">Our offering</h1>
+            <h1 className="md:text-4xl text-3xl mb-2 md:mb-15">Our offering</h1>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-16 mt-32 md:mt-0 hidden md:block">
+        <div className="grid grid-cols-1 mt-32 md:mt-0 hidden md:block">
           {MOCK_SERVICE.map((service) => (
             <div className="">
               <ServiceCard

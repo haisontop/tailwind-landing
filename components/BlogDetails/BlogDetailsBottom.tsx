@@ -3,8 +3,8 @@ import React from "react";
 const BlogDetailsBottom = () => {
   return (
     <>
-      <div className=" px-5 md:px-36">
-        <div className="mt-36">
+      <div className=" pt-5 pb-20  md:px-36">
+        <div className="mt-10 px-5 md:px-0 md:mt-36">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi
             odio maxime tenetur rem mollitia quis vero quaerat, necessitatibus
@@ -19,7 +19,7 @@ const BlogDetailsBottom = () => {
             Laborum ratione distinctio quas est non possimus quasi consequuntur.
           </p>
         </div>
-        <div className="mt-10">
+        <div className="mt-10 hidden md:block">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi
             odio maxime tenetur rem mollitia quis vero quaerat, necessitatibus
@@ -34,8 +34,8 @@ const BlogDetailsBottom = () => {
             Laborum ratione distinctio quas est non possimus quasi consequuntur.
           </p>
         </div>
-        <div>
-          <button className="bg-primary w-96 text-black py-4 rounded-full text-2xl md:px-10 mt-10 mr-5 ">
+        <div className="text-center md:text-left">
+          <button className="bg-primary w-96 text-black py-4 rounded-full text-2xl  md:px-10 mt-10 md:mr-5">
             Back to all article
           </button>
           <button className="bg-black text-white py-5 rounded-full border-2 w-96 mt-5 border-white border-opacity-100">

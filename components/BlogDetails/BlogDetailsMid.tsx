@@ -27,15 +27,15 @@ const SlugMid = () => {
             quis, dolorum eveniet quibusdam, unde ad! Eum libero nam.
           </p>
         </div>
-        <div className="flex justify-end md:justify-center">
+        <div className="flex justify-end md:justify-center ">
           <img
             src="https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFuJTIwZmFjZXxlbnwwfHwwfHw%3D&w=1000&q=80"
             alt=""
-            width="90%"
+            className="w-64 md:w-96"
           />
         </div>
       </div>
-      <div className="mt-14 md:mt-28">
+      <div className="mt-10 md:mt-28">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat modi
           doloribus delectus! Atque, iste iusto beatae molestiae non, delectus
