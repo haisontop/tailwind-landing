@@ -74,15 +74,15 @@ const ServiceOffering = () => {
     );
   };
   return (
-    <div className="text-white md:mx-10 mx-6">
-      <div className="grid md:grid-cols-2 pb-12 md:pb-0">
+    <div className="text-white xl:mx-10 mx-6">
+      <div className="grid xl:grid-cols-2 pb-12 xl:pb-0">
         <div className="flex flex-col">
-          <div className="md:sticky md:top-0">
-            <h1 className="md:text-4xl text-3xl mb-2 md:mb-15">Our offering</h1>
+          <div className="xl:sticky xl:top-0">
+            <h1 className="xl:text-4xl text-3xl mb-2 xl:mb-15">Our offering</h1>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 mt-32 md:mt-0 hidden md:block">
+        <div className="grid grid-cols-1 mt-32 xl:mt-0 hidden xl:block">
           {MOCK_SERVICE.map((service) => (
             <div className="">
               <ServiceCard
@@ -93,7 +93,7 @@ const ServiceOffering = () => {
           ))}
         </div>
       </div>
-      <div className="mt-4 block md:hidden">
+      <div className="mt-4 block xl:hidden">
         <Carousel
           responsive={responsive}
           ssr

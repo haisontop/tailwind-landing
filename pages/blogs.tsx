@@ -6,7 +6,7 @@ import client from "../client";
 const Blogs = ({ blogs }) => {
   return (
     <Layout>
-      <div className="bg-black text-white md:px-60">
+      <div className="bg-black text-white xl:px-60">
         <BlogHeader></BlogHeader>
         <BlogsList blogs={blogs} />
       </div>

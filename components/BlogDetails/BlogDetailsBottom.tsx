@@ -3,8 +3,8 @@ import React from "react";
 const BlogDetailsBottom = () => {
   return (
     <>
-      <div className=" pt-5 pb-20  md:px-36">
-        <div className="mt-10 px-5 md:px-0 md:mt-36">
+      <div className=" pt-5 pb-20  xl:px-36">
+        <div className="mt-10 px-5 xl:px-0 xl:mt-36">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi
             odio maxime tenetur rem mollitia quis vero quaerat, necessitatibus
@@ -19,7 +19,7 @@ const BlogDetailsBottom = () => {
             Laborum ratione distinctio quas est non possimus quasi consequuntur.
           </p>
         </div>
-        <div className="mt-10 hidden md:block">
+        <div className="mt-10 hidden xl:block">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi
             odio maxime tenetur rem mollitia quis vero quaerat, necessitatibus
@@ -34,11 +34,11 @@ const BlogDetailsBottom = () => {
             Laborum ratione distinctio quas est non possimus quasi consequuntur.
           </p>
         </div>
-        <div className="text-center px-5 md:px-0 md:text-left">
-          <button className="bg-primary w-full text-black py-4 md:w-96 rounded-full text-2xl  md:px-10 mt-10 md:mr-5">
+        <div className="text-center px-5 xl:px-0 xl:text-left">
+          <button className="bg-primary w-full text-black py-4 xl:w-96 rounded-full text-2xl  xl:px-10 mt-10 xl:mr-5">
             Back to all article
           </button>
-          <button className="bg-black text-white py-5 rounded-full border-2 w-full mt-5 border-white border-opacity-100 md:w-96">
+          <button className="bg-black text-white py-5 rounded-full border-2 w-full mt-5 border-white border-opacity-100 xl:w-96">
             Next up: So, what is the metaverse?
           </button>
         </div>

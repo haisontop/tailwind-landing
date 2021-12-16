@@ -15,12 +15,12 @@ interface HomeBlogProps {
 
 const HomeBlog = ({ title, preview, mainImage, slug }: HomeBlogProps) => {
   return (
-    <div className="mr-4 md:mr-0 md:mb-6">
+    <div className="mr-4 xl:mr-0 xl:mb-6">
       <img src={mainImage.asset.url} width="100%" className="home-blog-image" />
-      <h1 className="text-xl md:text-3xl mt-5">{title}</h1>
+      <h1 className="text-xl xl:text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
       <Link href={`/blog/${slug.current}`}>
-        <a className="text-sm md:text-2xl">READ MORE</a>
+        <a className="text-sm xl:text-2xl">READ MORE</a>
       </Link>
     </div>
   );
@@ -99,20 +99,20 @@ const Blogs = ({ blogs }) => {
   };
 
   return (
-    <div className="text-white md:mx-64 mx-6">
-      <div className="grid md:grid-cols-2 pb-12 md:pb-0">
+    <div className="text-white xl:mx-64 mx-6">
+      <div className="grid xl:grid-cols-2 pb-12 xl:pb-0">
         <div className="flex flex-col">
-          <div className="md:sticky md:top-0">
-            <h1 className="md:text-6xl text-4xl mb-2 md:mb-15">The Write Up</h1>
+          <div className="xl:sticky xl:top-0">
+            <h1 className="xl:text-6xl text-4xl mb-2 xl:mb-15">The Write Up</h1>
             <Link href="/blogs">
-              <a className="bg-primary text-black py-3 md:py-5 md:my-0 rounded-full text-xl md:text-3xl px-10 top-7 w-max relative">
+              <a className="bg-primary text-black py-3 xl:py-5 xl:my-0 rounded-full text-xl xl:text-3xl px-10 top-7 w-max relative">
                 READ ALL
               </a>
             </Link>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-16 mt-32 md:mt-0 hidden md:block">
+        <div className="grid grid-cols-1 gap-16 mt-32 xl:mt-0 hidden xl:block">
           {blogs.map((blog) => (
             <div className="">
               <HomeBlog
@@ -125,7 +125,7 @@ const Blogs = ({ blogs }) => {
           ))}
         </div>
       </div>
-      <div className="mt-4 block md:hidden">
+      <div className="mt-4 block xl:hidden">
         <Carousel
           responsive={responsive}
           ssr

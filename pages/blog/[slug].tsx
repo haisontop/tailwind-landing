@@ -22,7 +22,7 @@ const Blog = ({
 }: BlogProps) => {
   return (
     <Layout>
-      <div className="bg-black md:px-16 text-white">
+      <div className="bg-black xl:px-16 text-white">
         <BlogDetailsHeader
           body={body}
           mainImage={mainImage}

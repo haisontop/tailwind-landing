@@ -24,7 +24,7 @@ export default function HomeHero({ heroImages }) {
   };
 
   return (
-    <div className="home-hero-slide mt-14 md:mt-0">
+    <div className="home-hero-slide mt-14 xl:mt-0">
       <Carousel
         centerMode
         responsive={responsive}

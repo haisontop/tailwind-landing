@@ -15,8 +15,8 @@ function Navbar(props: Props): ReactElement {
 
   return (
     <div>
-      <div className="flex justify-between md:px-4 text-2xl text-white pt-3 fixed top-0 z-40 left-5">
-        <div className="hidden md:block">
+      <div className="flex justify-between xl:px-4 text-2xl text-white pt-3 fixed top-0 z-40 left-5">
+        <div className="hidden xl:block">
           <ul className="list-none">
             <li>
               <Link href="/services/e-commerce">Service</Link>
@@ -29,7 +29,7 @@ function Navbar(props: Props): ReactElement {
             </li>
           </ul>
         </div>
-        <div className="block md:hidden">
+        <div className="block xl:hidden">
           <button
             className={`bg-black text-white rounded px-4 py-1`}
             onClick={() => setIsOpen(!isOpen)}
@@ -39,7 +39,7 @@ function Navbar(props: Props): ReactElement {
         </div>
         <div> </div>
       </div>
-      <div className="text-white top-3 right-5 md:text-3xl fixed z-40 cursor-pointer">
+      <div className="text-white top-3 right-5 xl:text-3xl fixed z-40 cursor-pointer">
         <Link href="/">{!showLogo ? <h1>Commet</h1> : <LogoIcon />}</Link>
       </div>
       <MenuDrawer isOpen={isOpen} setIsOpen={setIsOpen}>

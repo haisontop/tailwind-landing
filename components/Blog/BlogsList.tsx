@@ -20,8 +20,8 @@ interface BlogListProps {
 
 const BlogsList = ({ blogs }: BlogListProps) => {
   return (
-    <div className="pb-5 md:pb-0">
-      <div className="grid md:grid-cols-2 gap-10 mt-10 px-5 md:px-0">
+    <div className="pb-5 xl:pb-0">
+      <div className="grid xl:grid-cols-2 gap-10 mt-10 px-5 xl:px-0">
         {blogs.map((blog) => (
           <BlogCard
             slug={blog.slug.current}
@@ -34,7 +34,7 @@ const BlogsList = ({ blogs }: BlogListProps) => {
           />
         ))}
       </div>
-      <div className="flex justify-center mb-10 mt-10 md:mt-32 md:mb-0">
+      <div className="flex justify-center mb-10 mt-10 xl:mt-32 xl:mb-0">
         <button
           className="border border-white rounded-2xl border-solid py-3 px-5"
         >

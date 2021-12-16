@@ -8,7 +8,7 @@ import ServiceSpaciality from "../../components/Services/ServiceSpaciality";
 const Services = () => {
   return (
     <Layout>
-      <div className="bg-black text-white md:px-60">
+      <div className="bg-black text-white xl:px-60">
         <ServiceHeader></ServiceHeader>
         <ServiceBody></ServiceBody>
         <ServiceOfering></ServiceOfering>

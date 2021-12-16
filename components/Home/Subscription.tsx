@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Subscription = () => {
   return (
-    <div className="text-white my-24 md:my-32 md:mt-52 md:mb-36">
-      <div className="mx-5 md:mx-80">
-        <h1 className="text-4xl md:text-6xl text-center">
+    <div className="text-white my-24 xl:my-32 xl:mt-52 xl:mb-36">
+      <div className="mx-5 xl:mx-80">
+        <h1 className="text-4xl xl:text-6xl text-center">
           We work in variety of industries and have strong experience
           <div className="flex justify-center flex-wrap w-full">
             serving
@@ -55,20 +55,20 @@ const Subscription = () => {
           </div>
         </h1>
       </div>
-      <div className="flex justify-center mt-36 md:mx-60">
-        <div className="border-4 border-light-blue-500 border-opacity-100 px-10 md:px-20 py-6 md:py-10 rounded-full w-full mx-3">
-          <h1 className="text-xs md:text-2xl text-center">
+      <div className="flex justify-center mt-36 xl:mx-60">
+        <div className="border-4 border-light-blue-500 border-opacity-100 px-10 xl:px-20 py-6 xl:py-10 rounded-full w-full mx-3">
+          <h1 className="text-xs xl:text-2xl text-center">
             Stay in touch subscribebing to our newsletter
           </h1>
-          <div className="md:mt-12 mt-7 flex justify-between border-b-2 pb-2 md:pb-3">
+          <div className="xl:mt-12 mt-7 flex justify-between border-b-2 pb-2 xl:pb-3">
             <input
               type="email"
               placeholder="Email Address"
               className="bg-transparent outline-none"
             />
-            <button className="hidden md:block">BLAST OFF</button>
+            <button className="hidden xl:block">BLAST OFF</button>
           </div>
-          <button className="block md:hidden mx-auto mt-2">BLAST OFF</button>
+          <button className="block xl:hidden mx-auto mt-2">BLAST OFF</button>
         </div>
       </div>
     </div>

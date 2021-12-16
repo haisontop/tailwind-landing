@@ -3,9 +3,9 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <div className="text-white text-center px-7 my-10 md:my-36 md:px-0 sm:py-10 md:py-20 md:mx-80">
-        <div className="mt-10 text-left pr-10 md:pr-80">
-          <h1 className="text-4xl md:text-5xl">
+      <div className="text-white text-center px-7 my-10 xl:my-36 xl:px-0 sm:py-10 xl:py-20 xl:mx-80 md:mx-20">
+        <div className="mt-10 text-left pr-10 xl:pr-80">
+          <h1 className="text-4xl xl:text-5xl md:text-5xl">
             <span className="text-primary">Digital poineers,</span> <br /> at
             your service
           </h1>
@@ -19,8 +19,8 @@ const Services = () => {
             success.
           </p>
         </div>
-        <div className="mt-12 md:mt-36  text-right md:pl-80">
-          <h1 className="text-4xl md:text-5xl">
+        <div className="mt-12 xl:mt-36  text-right xl:pl-80 md:pl-40">
+          <h1 className="text-4xl xl:text-5xl md:text-5xl">
             We get <span className="text-green-200"> customer service.</span>
           </h1>
           <p className="mt-10">
@@ -34,46 +34,46 @@ const Services = () => {
         </div>
       </div>
       <div className="text-center text-white">
-        <div className="px-10 md:px-0 my-20">
-          <h1 className="text-3xl md:text-5xl">
+        <div className="px-10 xl:px-0 my-20">
+          <h1 className="text-3xl xl:text-5xl">
             We are a full-service agency <br /> with a special focus on <br />{" "}
             customer experience{" "}
           </h1>
         </div>
         <div className="overflow-hidden main-box">
-          <div className="flex gap-2 md:gap-4 first-slide">
-            <div className="bg-red-900 my-auto text-white py-3 md:py-5 px-5 rounded-full w-full">
+          <div className="flex gap-2 xl:gap-4 first-slide">
+            <div className="bg-red-900 my-auto text-white py-3 xl:py-5 px-5 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Marketing Cloud</h1>
             </div>
-            <div className="bg-primary text-black py-3 md:py-5 px-14 rounded-full w-full">
+            <div className="bg-primary text-black py-3 xl:py-5 px-14 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Interaction Studio</h1>
             </div>
-            <div className="bg-green-900 text-white px-6 py-3 md:py-5 rounded-full w-full">
+            <div className="bg-green-900 text-white px-6 py-3 xl:py-5 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">CRM</h1>
             </div>
-            <div className="bg-black text-white px-6 py-3 md:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
+            <div className="bg-black text-white px-6 py-3 xl:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-2xl whitespace-pre">E-Commerce</h1>
             </div>
           </div>
           <div className="flex gap-4 mt-6 seccond-slide">
-            <div className="bg-black text-white px-14 py-3 md:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
+            <div className="bg-black text-white px-14 py-3 xl:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-2xl whitespace-pre">Digital Transformation</h1>
             </div>
-            <div className="bg-green-200 text-black px-20 py-3 md:py-5 rounded-full w-full">
+            <div className="bg-green-200 text-black px-20 py-3 xl:py-5 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Marketing Cloud</h1>
             </div>
-            <div className="bg-red-900  text-white px-6 py-3 md:py-5 rounded-full w-full">
+            <div className="bg-red-900  text-white px-6 py-3 xl:py-5 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Interaction Studio</h1>
             </div>
           </div>
           <div className="flex gap-4 mt-6 -mr-60 seccond-slide">
-            <div className="bg-green-900 text-white py-3 md:py-5 rounded-full w-full">
+            <div className="bg-green-900 text-white py-3 xl:py-5 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">CRM</h1>
             </div>
-            <div className="bg-black text-white py-3 md:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
+            <div className="bg-black text-white py-3 xl:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-2xl whitespace-pre">E-Commerce</h1>
             </div>
-            <div className="bg-primary text-black py-3 md:py-5 rounded-full w-full">
+            <div className="bg-primary text-black py-3 xl:py-5 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Digital Transformation</h1>
             </div>
           </div>

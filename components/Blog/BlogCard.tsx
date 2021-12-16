@@ -20,7 +20,7 @@ const BlogCard = (props: BlogCardProps) => {
       <h1 className="text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
       <Link href={`/blog/${slug}`}>
-        <a className="text-1xl md:text-2xl underline md:no-underline">READ MORE</a>
+        <a className="text-1xl xl:text-2xl underline xl:no-underline">READ MORE</a>
       </Link>
     </div>
   );
