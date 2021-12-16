@@ -2,9 +2,9 @@ import React from 'react';
 
 const ServiceSpaciality = () => {
     return (
-        <div className="text-center mt-16 md:mt-40 px-5 pb-14 md:pb-0">
+        <div className="text-center mt-20 md:mt-40 px-5 pb-14 md:pb-0">
             <div>
-                <h1 className="text-white text-5xl">Our spacialties</h1>
+                <h1 className="text-white text-3xl md:text-5xl">Our spacialties</h1>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-14 md:mt-20">
                 <div className="bg-white rounded-full flex justify-center">
