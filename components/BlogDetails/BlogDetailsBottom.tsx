@@ -34,11 +34,11 @@ const BlogDetailsBottom = () => {
             Laborum ratione distinctio quas est non possimus quasi consequuntur.
           </p>
         </div>
-        <div className="text-center md:text-left">
-          <button className="bg-primary w-96 text-black py-4 rounded-full text-2xl  md:px-10 mt-10 md:mr-5">
+        <div className="text-center px-5 md:px-0 md:text-left">
+          <button className="bg-primary w-full text-black py-4 md:w-96 rounded-full text-2xl  md:px-10 mt-10 md:mr-5">
             Back to all article
           </button>
-          <button className="bg-black text-white py-5 rounded-full border-2 w-96 mt-5 border-white border-opacity-100">
+          <button className="bg-black text-white py-5 rounded-full border-2 w-full mt-5 border-white border-opacity-100 md:w-96">
             Next up: So, what is the metaverse?
           </button>
         </div>
