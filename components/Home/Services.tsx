@@ -3,13 +3,13 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <div className="text-white text-center px-7 my-10 xl:my-36 xl:px-0 sm:py-10 xl:py-20 xl:mx-80 md:mx-20">
-        <div className="mt-10 text-left pr-10 xl:pr-80">
+      <div className="text-white text-center px-7 my-10 xl:my-36 xl:px-0 sm:py-10 xl:py-20 xl:mx-80 md:mx-14">
+        <div className="mt-10 text-left pr-10 lg:pr-32 xl:pr-80">
           <h1 className="text-4xl xl:text-5xl md:text-5xl">
             <span className="text-primary">Digital poineers,</span> <br /> at
             your service
           </h1>
-          <p className="mt-10">
+          <p className="mt-10  xl:text-base md:text-2xl">
             just when change you though you had a handle on your business
             infrastructure, some software geeks went and pushed the boundaries
             of the customer experience again! Giving your customers the
@@ -19,11 +19,11 @@ const Services = () => {
             success.
           </p>
         </div>
-        <div className="mt-12 xl:mt-36  text-right xl:pl-80 md:pl-40">
+        <div className="mt-12 xl:mt-36  text-right lg:pl-52 xl:pl-80 md:pl-40">
           <h1 className="text-4xl xl:text-5xl md:text-5xl">
-            We get <span className="text-green-200"> customer service.</span>
+            We get <span className="text-green-200"> <br /> customer service.</span>
           </h1>
-          <p className="mt-10">
+          <p className="mt-10  xl:text-base md:text-2xl">
             A digital strategy that the delivers results requers vision,
             expertise. and unfaltering excution. The comet team are dedicated IT
             and markating professionals with obession for the very best in
@@ -35,7 +35,7 @@ const Services = () => {
       </div>
       <div className="text-center text-white">
         <div className="px-10 xl:px-0 my-20">
-          <h1 className="text-3xl xl:text-5xl">
+          <h1 className="text-3xl lg:text-7xl xl:text-5xl md:text-5xl">
             We are a full-service agency <br /> with a special focus on <br />{" "}
             customer experience{" "}
           </h1>

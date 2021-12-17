@@ -20,7 +20,7 @@ const HomeBlog = ({ title, preview, mainImage, slug }: HomeBlogProps) => {
       <h1 className="text-xl xl:text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
       <Link href={`/blog/${slug.current}`}>
-        <a className="text-sm xl:text-2xl">READ MORE</a>
+        <a className="text-sm lg:text-3xl xl:text-2xl md:text-2xl">READ MORE</a>
       </Link>
     </div>
   );

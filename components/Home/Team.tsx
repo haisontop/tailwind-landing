@@ -18,7 +18,7 @@ const Team = ({ team }: TeamProps) => {
       <div className="grid grid-cols-2 text-white mt-36 xl:ml-80 gap-8 xl:gap-0 relative">
         <div className="flex justify-start">
           <div className="">
-            <h1 className="text-3xl xl:text-5xl ml-5 xl:ml-0">{title}</h1>
+            <h1 className="text-3xl lg:text-6xl xl:text-5xl ml-5 xl:ml-0 md:text-5xl">{title}</h1>
             <p className="xl:py-10 ml-5 xl:ml-0 py-4 xl:static absolute">
               <BlockContent blocks={description} />
             </p>

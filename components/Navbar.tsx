@@ -43,14 +43,14 @@ function Navbar(props: Props): ReactElement {
         <Link href="/">{!showLogo ? <h1>Commet</h1> : <LogoIcon />}</Link>
       </div>
       <MenuDrawer isOpen={isOpen} setIsOpen={setIsOpen}>
-        <ul className="list-none text-white text-2xl">
+        <ul className="list-none text-white text-2xl lg:text-6xl xl:text-2xl md:text-5xl">
           <li>
             <Link href="/services/e-commerce">Service</Link>
           </li>
-          <li className="mt-1">
+          <li className="mt-1 lg:mt-7 xl:mt-1 md:mt-7">
             <Link href="/blogs">The Write up</Link>
           </li>
-          <li className="mt-1">
+          <li className="mt-1  lg:mt-7 xl:mt-1 md:mt-7">
             <Link href="/">Contect</Link>
           </li>
         </ul>

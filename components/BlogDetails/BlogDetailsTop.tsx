@@ -2,7 +2,7 @@ import React from "react";
 
 const slugTop = () => {
   return (
-    <div className="text-white px-5 xl:px-36 mt-10 flex justify-center">
+    <div className="text-white px-5 xl:px-36 mt-10 flex justify-center md:px-10 xl:text-base md:text-2xl">
       <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum

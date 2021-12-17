@@ -2,8 +2,8 @@ import React from "react";
 
 const SlugMid = () => {
   return (
-    <div className="xl:px-36 px-5">
-      <div className="grid xl:grid-cols-2 xl:gap-28 gap-10">
+    <div className="xl:px-36 px-5 md:px-10">
+      <div className="grid xl:grid-cols-2 xl:gap-28 gap-10 xl:text-base md:text-2xl">
         <div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
@@ -31,11 +31,11 @@ const SlugMid = () => {
           <img
             src="https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFuJTIwZmFjZXxlbnwwfHwwfHw%3D&w=1000&q=80"
             alt=""
-            className="w-64 xl:w-96"
+            className="w-64 xl:w-96 md:w-96"
           />
         </div>
       </div>
-      <div className="mt-10 xl:mt-28">
+      <div className="mt-10 xl:mt-28 xl:text-base md:text-2xl">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat modi
           doloribus delectus! Atque, iste iusto beatae molestiae non, delectus
