@@ -5,7 +5,7 @@ const HomeTop = () => {
     <div className="px-10 pt-20">
       <div className="text-white flex items-center justify-center xl:pb-20 xl:pt-10">
         <div>
-          <h1 className="text-5xl xl:text-8xl md:text-6xl">
+          <h1 className="text-5xl xl:text-8xl md:text-7xl">
             Your fearless <br /> companion on the <br /> digital frontier
           </h1>
           <div className=" flex mt-14">

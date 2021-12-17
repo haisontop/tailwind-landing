@@ -78,7 +78,7 @@ const ServiceOffering = () => {
       <div className="grid xl:grid-cols-2 pb-12 xl:pb-0">
         <div className="flex flex-col">
           <div className="xl:sticky xl:top-0">
-            <h1 className="xl:text-4xl text-3xl mb-2 xl:mb-15">Our offering</h1>
+            <h1 className="lg:text-6xl xl:text-4xl text-3xl mb-2 xl:mb-15 md:text-5xl">Our offering</h1>
           </div>
         </div>
 

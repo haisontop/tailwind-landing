@@ -21,7 +21,7 @@ interface BlogListProps {
 const BlogsList = ({ blogs }: BlogListProps) => {
   return (
     <div className="pb-5 xl:pb-0">
-      <div className="grid xl:grid-cols-2 gap-10 mt-10 px-5 xl:px-0">
+      <div className="grid lg:grid-cols-2 xl:grid-cols-2 gap-10 mt-10 px-5 lg:px-20 xl:px-0 md:px-10">
         {blogs.map((blog) => (
           <BlogCard
             slug={blog.slug.current}
