@@ -21,7 +21,7 @@ const Service = ({ title, heroText, offering, specialities }: ServiceProps) => {
   return (
     <Layout>
       <div className="bg-black text-white xl:px-60">
-        <ServiceHeader></ServiceHeader>
+        <ServiceHeader title={title}></ServiceHeader>
         <ServiceBody content={heroText}></ServiceBody>
         <ServiceOffering offering={offering} />
         <ServiceSpacialities specialities={specialities} />

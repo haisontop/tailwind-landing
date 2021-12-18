@@ -51,7 +51,7 @@ function Navbar(props: Props): ReactElement {
             <Link href="/blogs">The Write up</Link>
           </li>
           <li className="mt-1  lg:mt-7 xl:mt-1 md:mt-7">
-            <Link href="/">Contect</Link>
+            <Link href="/">Contact</Link>
           </li>
         </ul>
       </MenuDrawer>
