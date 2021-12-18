@@ -36,3 +36,17 @@ export const MOCK_SERVICE = [
         body: "Customer experience doesn't end with a sale.At Commet we'll help you to turn your customer into raving fans and keep them engaged with your brand, purchase after purchase."
     }
 ]
+export const MOCK_HEALTHCARE_SERVICE = [
+    {
+        key: 1,
+        img: "/images/viva-expert.png",
+        title: "Veva Expert",
+        body: "With considerable experience across the Veeva ecosystem, we pride ourselves in our knowledge and opinions of Veeva best practice."
+    },
+    {
+        key: 2,
+        img: "/images/Qvia.png",
+        title: "IQVIA OCE Specialists",
+        body: "We are excited about IQVIA's OCE offering. OCE Sales and Marketing are our specialty and we'd love to help you get the most out of powerful platform."
+    }
+]

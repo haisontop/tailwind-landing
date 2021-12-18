@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import React from "react";
 import Carousel from "react-multi-carousel";
-import { MOCK_SERVICE } from "./../../constants/mockservices"
+import { MOCK_HEALTHCARE_SERVICE, MOCK_SERVICE } from "./../../constants/mockservices"
 import ServiceCard from "./ServiceCard";
 const ServiceOffering = () => {
+  const Router = useRouter()
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -102,7 +104,7 @@ const ServiceOffering = () => {
           customButtonGroup={<CustomButtonGroup />}
           partialVisible={true}
         >
-          {MOCK_SERVICE.map((service) => (
+          {(Router.query.slug === "healthcare" ? MOCK_HEALTHCARE_SERVICE : MOCK_SERVICE).map((service) => (
             <ServiceCard
               key={service.key}
               service={service}
