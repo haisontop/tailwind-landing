@@ -21,19 +21,19 @@ const ServiceHeader = () => {
       </div>
       {/*================= drop down menubar ================*/}
       <div className="text-center mx-24 xl:mx-0 xl:hidden">
-        <div className="grid grid-cols-1 text-center text-2xl gap-3 ">
+        <div className="grid grid-cols-1 text-center text-1xl gap-3 ">
           <button style={style} onClick={e => setActive(!active)} className="px-4 py-3 lg:py-5 md:py-5 flex rounded-full text-1xl text-black justify-center">
             {select}
             <div className="ml-5">
               {
                 !active ?
-                  <img src="/images/dropdown.png" width="15px" className="mt-4" alt="" /> : <img src="/images/uparrow.png" width="15px" className="mt-4" alt="" />
+                  <img src="/images/dropdown.png" width="10px" className="mt-3" alt="" /> : <img src="/images/uparrow.png" width="10px" className="mt-3" alt="" />
               }
             </div>
           </button>
           {
             active &&
-            <div className="grid grid-cols-1 text-center text-2xl gap-3 ">
+            <div className="grid grid-cols-1 text-center text-1xl gap-3 ">
               {
                 select !== "E-commerce" &&
                 <div className="border-2 border-white py-3 rounded-full lg:py-5 md:py-5">
