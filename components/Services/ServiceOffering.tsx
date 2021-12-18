@@ -1,8 +1,22 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import { MOCK_SERVICE } from "./../../constants/mockservices"
+import { MOCK_SERVICE } from "./../../constants/mockservices";
 import ServiceCard from "./ServiceCard";
-const ServiceOffering = () => {
+
+export interface OfferingModel {
+  title: string;
+  body: string;
+  img: string;
+}
+
+interface ServiceOfferingProps {
+  offering: OfferingModel[];
+}
+
+const ServiceOffering = ({ offering }: ServiceOfferingProps) => {
+
+  console.log("offering", offering)
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -78,17 +92,16 @@ const ServiceOffering = () => {
       <div className="grid xl:grid-cols-2 pb-12 xl:pb-0">
         <div className="flex flex-col">
           <div className="xl:sticky xl:top-0">
-            <h1 className="lg:text-6xl xl:text-4xl text-3xl mb-2 xl:mb-15 md:text-5xl">Our offering</h1>
+            <h1 className="lg:text-6xl xl:text-4xl text-3xl mb-2 xl:mb-15 md:text-5xl">
+              Our offering
+            </h1>
           </div>
         </div>
 
         <div className="grid grid-cols-1 mt-32 xl:mt-0 hidden xl:block">
-          {MOCK_SERVICE.map((service) => (
+          {offering.map((service) => (
             <div className="">
-              <ServiceCard
-                key={service.key}
-                service={service}
-              />
+              <ServiceCard key={service.title} service={service} />
             </div>
           ))}
         </div>
@@ -102,11 +115,8 @@ const ServiceOffering = () => {
           customButtonGroup={<CustomButtonGroup />}
           partialVisible={true}
         >
-          {MOCK_SERVICE.map((service) => (
-            <ServiceCard
-              key={service.key}
-              service={service}
-            />
+          {offering.map((service) => (
+            <ServiceCard key={service.title} service={service} />
           ))}
         </Carousel>
       </div>
