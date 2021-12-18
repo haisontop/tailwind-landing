@@ -19,7 +19,7 @@ const ServiceHeader = () => {
         <ActiveLink href="/services/blockchain">Blockchain</ActiveLink>
         <ActiveLink href="/services/saas">Saas</ActiveLink>
       </div>
-      {/*================= drop down menuba r================*/}
+      {/*================= drop down menubar ================*/}
       <div className="text-center mx-24 xl:mx-0 xl:hidden">
         <div className="grid grid-cols-1 text-center text-2xl gap-3 ">
           <button style={style} onClick={e => setActive(!active)} className="px-4 py-3 lg:py-5 md:py-5 flex rounded-full text-1xl text-black justify-center">
