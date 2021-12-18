@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import { MOCK_SERVICE } from "./../../constants/mockservices";

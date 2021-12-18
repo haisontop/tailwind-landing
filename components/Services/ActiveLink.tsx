@@ -9,13 +9,14 @@ const ActiveLink: React.FC<ActiveLinkProps> = ({ href, children }) => {
   const router = useRouter();
 
   const isCurrentpath = router.pathname === href || router.asPath === href;
+  const color = router.query.slug === "healthcare" ? "#9EE0D6" : "#B45309"
 
   return (
     <Link href={href}>
       <div
         style={{
           textDecoration: "none",
-          backgroundColor: isCurrentpath && "#B45309",
+          backgroundColor: isCurrentpath && color,
           border: isCurrentpath ? "none" : "2px solid #fff",
           color: isCurrentpath && "#000",
           padding: "16px 0px",
