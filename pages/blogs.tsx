@@ -16,7 +16,7 @@ const Blogs = ({ blogs }) => {
 
 export async function getStaticProps(context) {
   const blogs = await client.fetch(
-    `*[_type == "blog"][0..2]{
+    `*[_type == "blog"]{
       title,
       _createdAt,
       publishedAt,

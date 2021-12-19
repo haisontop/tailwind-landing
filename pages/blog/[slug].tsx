@@ -53,12 +53,12 @@ export async function getStaticProps(context) {
       }`
   );
 
+  console.log(blog);
+
   return {
     props: {
-      blog: {
-        ...blog[0],
-        mainImage: blog[0].mainImage.asset.url,
-      },
+      ...blog[0],
+      mainImage: blog[0].mainImage.asset.url,
     },
     revalidate: 60,
   };
