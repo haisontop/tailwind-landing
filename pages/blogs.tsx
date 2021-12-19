@@ -6,6 +6,7 @@ import ReactPaginate from "react-paginate";
 import PaginatePrev from "../components/icons/PaginatePrev";
 import PaginateNext from "../components/icons/PaginateNext";
 import { withRouter } from "next/router";
+import { ITEMS_PER_PAGE } from "../constants/pagination";
 
 const Blogs = ({ blogs, pageCount, router }) => {
   const handlePageChange = (event) => {
@@ -35,16 +36,14 @@ const Blogs = ({ blogs, pageCount, router }) => {
 };
 
 export async function getServerSideProps({ query: { page = 1 } }) {
-  const perPage = 2;
-
-  const startOffset = (page - 1) * perPage;
-  const endOffset = startOffset + perPage - 1;
+  const startOffset = (page - 1) * ITEMS_PER_PAGE;
+  const endOffset = startOffset + ITEMS_PER_PAGE - 1;
 
   const itemCount = await client.fetch(`
     count(*[_type == 'blog'])
   `);
 
-  const pageCount = Math.ceil(itemCount / perPage);
+  const pageCount = Math.ceil(itemCount / ITEMS_PER_PAGE);
 
   const blogs = await client.fetch(
     `*[_type == "blog"][${startOffset}..${endOffset}]{
