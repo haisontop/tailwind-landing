@@ -53,8 +53,6 @@ export async function getStaticProps(context) {
       }`
   );
 
-  console.log(blog);
-
   return {
     props: {
       ...blog[0],
