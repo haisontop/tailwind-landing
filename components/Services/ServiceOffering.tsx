@@ -11,11 +11,10 @@ export interface OfferingModel {
 }
 
 interface ServiceOfferingProps {
-  offering: OfferingModel[];
+  offerings: OfferingModel[];
 }
 
-const ServiceOffering = ({ offering }: ServiceOfferingProps) => {
-
+const ServiceOffering = ({ offerings }: ServiceOfferingProps) => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -98,11 +97,13 @@ const ServiceOffering = ({ offering }: ServiceOfferingProps) => {
         </div>
 
         <div className="grid grid-cols-1 mt-32 xl:mt-0 hidden xl:block">
-          {offering.map((service) => (
-            <div className="">
-              <ServiceCard key={service.title} service={service} />
-            </div>
-          ))}
+          {offerings &&
+            offerings.length > 0 &&
+            offerings.map((service) => (
+              <div className="">
+                <ServiceCard key={service.title} service={service} />
+              </div>
+            ))}
         </div>
       </div>
       <div className="mt-4 block xl:hidden">
@@ -114,9 +115,11 @@ const ServiceOffering = ({ offering }: ServiceOfferingProps) => {
           customButtonGroup={<CustomButtonGroup />}
           partialVisible={true}
         >
-          {offering.map((service) => (
-            <ServiceCard key={service.title} service={service} />
-          ))}
+          {offerings &&
+            offerings.length > 0 &&
+            offerings.map((service) => (
+              <ServiceCard key={service.title} service={service} />
+            ))}
         </Carousel>
       </div>
     </div>

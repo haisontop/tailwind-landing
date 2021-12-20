@@ -13,17 +13,17 @@ import client from "../../client";
 interface ServiceProps {
   title?: string;
   heroText?: string;
-  offering: OfferingModel[];
+  offerings: OfferingModel[];
   specialities: ServiceSpacialityModel[];
 }
 
-const Service = ({ title, heroText, offering, specialities }: ServiceProps) => {
+const Service = ({ title, heroText, offerings, specialities }: ServiceProps) => {
   return (
     <Layout>
       <div className="bg-black text-white xl:px-60">
         <ServiceHeader title={title}></ServiceHeader>
         <ServiceBody content={heroText}></ServiceBody>
-        <ServiceOffering offering={offering} />
+        <ServiceOffering offerings={offerings} />
         <ServiceSpacialities specialities={specialities} />
       </div>
     </Layout>
@@ -59,7 +59,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       ...service[0],
-      offering:
+      offerings:
         service[0].offerings && service[0].offerings.length > 0
           ? service[0].offerings.map((offer) => ({
             title: offer.name,
