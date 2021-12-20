@@ -34,9 +34,9 @@ const Services = () => {
         </div>
       </div>
       <div className="text-center text-white">
-        <div className="px-10 xl:px-0 my-20">
+        <div className="px-5 xl:px-72 my-20">
           <h1 className="text-3xl lg:text-7xl xl:text-5xl md:text-5xl">
-            We are a full-service agency <br /> with a special focus on <br />{" "}
+            We are a full-service agency with a special focus on{" "}
             customer experience{" "}
           </h1>
         </div>
