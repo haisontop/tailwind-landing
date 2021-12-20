@@ -20,7 +20,7 @@ const ServiceSpacialities = ({ specialities }: ServiceSpacialitiesProps) => {
       <div className="grid grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-2 xl:grid-cols-4 xl:gap-5 mt-14 xl:mt-20 md:grid-cols-2">
         {specialities.map((speciality, index) => (
           <div
-            className="bg-white rounded-full flex justify-center px-4"
+            className="bg-white rounded-full flex justify-center px-4 py-2 service-speciality-container"
             key={index}
           >
             <img

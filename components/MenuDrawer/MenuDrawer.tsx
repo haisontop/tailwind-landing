@@ -3,8 +3,6 @@ import CloseIcon from "../icons/CloseIcon";
 import PlusIcon from "../icons/PlusIcon";
 
 export default function MenuDrawer({ children, isOpen, setIsOpen }) {
-  console.log("isOpen", isOpen);
-
   return (
     <main
       className={
