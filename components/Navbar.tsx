@@ -44,14 +44,14 @@ function Navbar(props: Props): ReactElement {
         <Link href="/">{!showLogo && (Router.asPath === "/") ? <h1 className="text-3xl md:text-3xl font-semibold">COMET</h1> : <LogoIcon />}</Link>
       </div>
       <MenuDrawer isOpen={isOpen} setIsOpen={setIsOpen}>
-        <ul className="list-none text-white text-2xl lg:text-6xl xl:text-2xl md:text-5xl">
+        <ul className="list-none text-white text-4xl lg:text-6xl xl:text-2xl md:text-5xl text-center my-36">
           <li>
             <Link href="/services/e-commerce">Service</Link>
           </li>
-          <li className="mt-1 lg:mt-7 xl:mt-1 md:mt-7">
+          <li className="mt-5 lg:mt-7 xl:mt-1 md:mt-7">
             <Link href="/blogs">The Write up</Link>
           </li>
-          <li className="mt-1  lg:mt-7 xl:mt-1 md:mt-7">
+          <li className="mt-5  lg:mt-7 xl:mt-1 md:mt-7">
             <Link href="/">Contact</Link>
           </li>
         </ul>

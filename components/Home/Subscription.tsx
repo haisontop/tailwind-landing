@@ -56,8 +56,8 @@ const Subscription = () => {
         </h1>
       </div>
       <div className="flex justify-center mt-36 lg:mx-14 xl:mx-60 md:mx-10">
-        <div className="border-4 border-light-blue-500 border-opacity-100 px-10 xl:px-20 py-6 xl:py-10 rounded-full w-full mx-3">
-          <h1 className="text-xs lg:text-3xl xl:text-2xl md:text-2xl text-center">
+        <div className="border-2 border-light-blue-500 border-opacity-100 px-7 xl:px-20 py-6 xl:py-10 rounded-full w-full mx-3">
+          <h1 className="lg:text-3xl xl:text-2xl md:text-2xl text-center mt-3 lg:mt-0 md:mt-0">
             Stay in touch subscribebing to our newsletter
           </h1>
           <div className="lg:mt-12 xl:mt-12 md:mt-10 mt-7 flex justify-between border-b-2 pb-2 xl:pb-3">
@@ -68,7 +68,7 @@ const Subscription = () => {
             />
             <button className="hidden xl:block">BLAST OFF</button>
           </div>
-          <button className="block xl:hidden mx-auto mt-2 lg:mt-5 xl:mt-2 md:mt-5 lg:text-3xl xl:text-base md:text-2xl">BLAST OFF</button>
+          <button className="block xl:hidden mx-auto mt-2 lg:mt-5 xl:mt-2 md:mt-5 lg:text-3xl xl:text-base md:text-2xl underline lg:no-underline md:no-underline">BLAST OFF</button>
         </div>
       </div>
     </div>

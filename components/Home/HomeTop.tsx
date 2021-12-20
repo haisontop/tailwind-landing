@@ -12,11 +12,10 @@ const HomeTop = () => {
             <button className="text-black w-40 py-3 xl:py-5 mr-2 rounded-full bg-primary xl:w-60 xl:mr-5">
               LET'S TAKE OFF
             </button>
-            <button className="bg-blue-300 px-20 xl:py-1 rounded-full">
+            <button className="bg-top-btn px-10 lg:px-20 md:px-20 xl:py-1 rounded-full">
               <img
                 src="images/home/downArrow.png"
-                width="80%"
-                className="top-b-t-n"
+                className="top-b-t-n w-7/12 lg:w-10/12 ml-1 md:w-10/12"
               />
             </button>
           </div>

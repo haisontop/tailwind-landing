@@ -62,17 +62,17 @@ export async function getStaticProps(context) {
       offering:
         service[0].offerings && service[0].offerings.length > 0
           ? service[0].offerings.map((offer) => ({
-              title: offer.name,
-              body: offer.description,
-              img: offer.mobileIcon.asset.url,
-            }))
+            title: offer.name,
+            body: offer.description,
+            img: offer.mobileIcon.asset.url,
+          }))
           : [],
       specialities:
         service[0].specialities && service[0].specialities.length > 0
           ? service[0].specialities.map((offer) => ({
-              title: offer.name,
-              img: offer.backgroundImage.asset.url,
-            }))
+            title: offer.name,
+            img: offer.backgroundImage.asset.url,
+          }))
           : [],
     },
     revalidate: 60,
@@ -90,12 +90,12 @@ export async function getStaticPaths() {
     paths:
       serviceSlugs && serviceSlugs.length > 0
         ? serviceSlugs.map((serviceSlug) => {
-            return {
-              params: {
-                slug: serviceSlug.slug.current,
-              },
-            };
-          })
+          return {
+            params: {
+              slug: serviceSlug.slug.current,
+            },
+          };
+        })
         : [],
     fallback: true,
   };
