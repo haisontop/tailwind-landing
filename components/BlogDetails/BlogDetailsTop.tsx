@@ -5,7 +5,7 @@ const slugTop = () => {
     <div className="text-white px-5 xl:px-36 mt-10 flex justify-center md:px-10 xl:text-base md:text-2xl">
       <div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum
+          jorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum
           repudiandae velit, vitae facilis neque quam voluptatibus modi esse
           dignissimos iste. Facere error voluptatibus blanditiis placeat eum
           harum asperiores cupiditate, veritatis, quas rerum quo magnam

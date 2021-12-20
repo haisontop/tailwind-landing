@@ -4,6 +4,7 @@ import { useScrollPosition } from "../hooks";
 import MenuDrawer from "./MenuDrawer/MenuDrawer";
 import PlusIcon from "./icons/PlusIcon";
 import LogoIcon from "./icons/LogoIcon";
+import { useRouter } from "next/router";
 
 interface Props {
   transparent?: boolean;
@@ -12,7 +13,7 @@ interface Props {
 function Navbar(props: Props): ReactElement {
   const showLogo = useScrollPosition(500);
   const [isOpen, setIsOpen] = React.useState(false);
-
+  const Router = useRouter()
   return (
     <div>
       <div className="flex justify-between xl:px-4 text-2xl text-white pt-3 fixed top-0 z-40 left-5">
@@ -40,7 +41,7 @@ function Navbar(props: Props): ReactElement {
         <div> </div>
       </div>
       <div className="text-white top-3 right-5 xl:text-3xl fixed z-40 cursor-pointer">
-        <Link href="/">{!showLogo ? <h1>Commet</h1> : <LogoIcon />}</Link>
+        <Link href="/">{!showLogo && (Router.asPath === "/") ? <h1 className="text-3xl md:text-3xl font-semibold">COMET</h1> : <LogoIcon />}</Link>
       </div>
       <MenuDrawer isOpen={isOpen} setIsOpen={setIsOpen}>
         <ul className="list-none text-white text-2xl lg:text-6xl xl:text-2xl md:text-5xl">

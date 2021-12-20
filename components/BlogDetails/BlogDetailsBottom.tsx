@@ -4,7 +4,7 @@ const BlogDetailsBottom = () => {
   return (
     <>
       <div className=" pt-5 pb-20  xl:px-36 md:px-10">
-        <div className="mt-10 px-5 xl:px-0 xl:mt-36">
+        <div className="mt-5 px-5 xl:px-0 xl:mt-36">
           <p className="lg:text-2xl xl:text-base md:text-2xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi
             odio maxime tenetur rem mollitia quis vero quaerat, necessitatibus

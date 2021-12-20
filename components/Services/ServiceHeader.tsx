@@ -46,6 +46,7 @@ const ServiceHeader = ({ title }: ServiceHeaderProps) => {
             color: isCurrentpath && "#000",
             padding: "16px 0px",
             borderRadius: "50px",
+            marginTop: "-25px",
             cursor: "pointer",
           }}
           className="flex text-center items-center justify-center relative"

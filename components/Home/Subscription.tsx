@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Subscription = () => {
   return (
-    <div className="text-white my-24 xl:my-32 xl:mt-52 xl:mb-36">
-      <div className="mx-5 xl:mx-80 md:mx-15">
+    <div className="text-white my-24 xl:my-20 xl:mt-52 xl:mb-36">
+      <div className="mx-5 xl:mx-60 md:mx-15">
         <h1 className="text-4xl md:text-6xl text-center">
           We work in variety of industries and have strong experience
           <div className="flex justify-center flex-wrap w-full">

@@ -3,9 +3,9 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <div className="text-white text-center px-7 my-10 xl:my-36 xl:px-0 sm:py-10 xl:py-20 xl:mx-80 md:mx-14">
+      <div className="text-white text-center px-7 my-10 xl:my-10 xl:px-0 sm:py-10 xl:py-20 xl:mx-80 md:mx-14">
         <div className="mt-10 text-left pr-10 lg:pr-32 xl:pr-80">
-          <h1 className="text-4xl xl:text-5xl md:text-5xl">
+          <h1 className="text-3xl xl:text-5xl md:text-5xl">
             <span className="text-primary">Digital poineers,</span> <br /> at
             your service
           </h1>
@@ -20,8 +20,8 @@ const Services = () => {
           </p>
         </div>
         <div className="mt-12 xl:mt-36  text-right lg:pl-52 xl:pl-80 md:pl-40">
-          <h1 className="text-4xl xl:text-5xl md:text-5xl">
-            We get <span className="text-green-200"> <br /> customer service.</span>
+          <h1 className="text-3xl xl:text-5xl md:text-5xl">
+            We get <span className="text-green-200"> customer service.</span>
           </h1>
           <p className="mt-10  xl:text-base md:text-2xl">
             A digital strategy that the delivers results requers vision,

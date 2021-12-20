@@ -19,7 +19,7 @@ const Team = ({ team }: TeamProps) => {
         <div className="flex justify-start">
           <div className="">
             <h1 className="text-3xl lg:text-6xl xl:text-5xl ml-5 xl:ml-0 md:text-5xl">{title}</h1>
-            <p className="xl:py-10 ml-5 xl:ml-0 py-4 xl:static absolute">
+            <p className="xl:py-10 xl:mb-10 ml-5 xl:ml-0 py-4 xl:static absolute">
               <BlockContent blocks={description} />
             </p>
             <img src={team_images[0]} alt="" className="mt-48 xl:mt-0 w-full xl:w-96" />

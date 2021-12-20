@@ -20,7 +20,7 @@ const HomeBlog = ({ title, preview, mainImage, slug }: HomeBlogProps) => {
       <h1 className="text-xl xl:text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
       <Link href={`/blog/${slug.current}`}>
-        <a className="text-sm lg:text-3xl xl:text-2xl md:text-2xl">READ MORE</a>
+        <a className="text-sm lg:text-3xl xl:text-2xl md:text-2xl underline xl:no-underline">READ MORE</a>
       </Link>
     </div>
   );
@@ -99,13 +99,14 @@ const Blogs = ({ blogs }) => {
   };
 
   return (
-    <div className="text-white xl:mx-64 mx-6">
+    <div className="text-white xl:mx-60 mx-6">
       <div className="grid xl:grid-cols-2 pb-12 xl:pb-0">
         <div className="flex flex-col">
-          <div className="xl:sticky xl:top-0">
-            <h1 className="xl:text-6xl text-4xl mb-2 xl:mb-15">The Write Up</h1>
+          <div className=" grid grid-cols-1 xl:sticky xl:top-0">
+            <h1 className="xl:text-5xl text-4xl mb-5 xl:mb-6">The Write Up</h1>
+            <p className="font-semibold xl:text-1xl xl:inline-block">Industry news, latest projects, and <br />  marketing insights. </p>
             <Link href="/blogs">
-              <a className="bg-primary text-black py-3 xl:py-5 xl:my-0 rounded-full text-xl xl:text-3xl px-10 top-7 w-max relative">
+              <a className="bg-primary text-black py-3 xl:top-20 xl:my-0 rounded-full text-xl xl:text-1xl xl:px-14 px-10 top-4 w-max relative">
                 READ ALL
               </a>
             </Link>
