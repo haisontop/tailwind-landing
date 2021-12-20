@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeTop = () => {
   return (
-    <div className=" px-6 pt-36 lg:px-52 xl:px-52  lg:pt-20 md:pt-20  md:px-40">
+    <div className=" px-6 pt-36 lg:px-52 xl:pl-80  lg:pt-20 md:pt-20  md:px-40">
       <div className="text-white flex items-center justify-center xl:pb-20 xl:pt-10">
         <div>
           <h1 className="text-6xl lg:text-8xl xl:text-8xl md:text-7xl ">
