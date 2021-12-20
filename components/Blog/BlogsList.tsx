@@ -34,7 +34,7 @@ const BlogsList = ({ blogs }: BlogListProps) => {
           />
         ))}
       </div>
-      <div className="flex justify-center mb-10 mt-10 xl:mt-32 xl:mb-0">
+      {/* <div className="flex justify-center mb-10 mt-10 xl:mt-32 xl:mb-0">
         <button
           className="border border-white rounded-2xl border-solid py-3 px-5"
         >
@@ -74,7 +74,7 @@ const BlogsList = ({ blogs }: BlogListProps) => {
             />
           </svg>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -16,8 +16,6 @@ interface ServiceOfferingProps {
 
 const ServiceOffering = ({ offering }: ServiceOfferingProps) => {
 
-  console.log("offering", offering)
-
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
