@@ -35,7 +35,6 @@ const Blog = ({
       `
       )
       .then((data) => {
-        console.log(data);
         setNextPost(data);
       });
   }, []);
