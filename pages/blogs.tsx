@@ -26,8 +26,8 @@ const Blogs = ({ blogs, pageCount, router }) => {
           previousLabel={<PaginatePrev />}
           nextLabel={<PaginateNext />}
           containerClassName="flex gap-3 justify-center items-center mt-10 text-xl py-10 font-bold"
-          activeLinkClassName="text-black bg-white"
-          pageLinkClassName="border-2 border-white py-2 px-3"
+          activeLinkClassName="bg-black text-white"
+          pageLinkClassName="bg-black text-white py-2 px-3"
           pageCount={pageCount}
           renderOnZeroPageCount={null}
         />
