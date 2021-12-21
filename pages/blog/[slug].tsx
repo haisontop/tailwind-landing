@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../../components/Layout";
 import BlogDetailsBottom from "../../components/BlogDetails/BlogDetailsBottom";
 import BlogDetailsCollage from "../../components/BlogDetails/BlogDetailsCollage";
@@ -6,6 +6,7 @@ import BlogDetailsHeader from "../../components/BlogDetails/BlogDetailsHeader";
 import BlogDetailsMid from "../../components/BlogDetails/BlogDetailsMid";
 import BlogDetailsTop from "../../components/BlogDetails/BlogDetailsTop";
 import client from "../../client";
+import { useRouter } from "next/router";
 
 interface BlogProps {
   mainImage?: string;
@@ -20,6 +21,25 @@ const Blog = ({
   _createdAt = "",
   mainImage = "",
 }: BlogProps) => {
+  const router = useRouter();
+  const [nextPost, setNextPost] = useState(null);
+
+  useEffect(() => {
+    client
+      .fetch(
+        `
+      *[_type == "blog" && _createdAt > "${_createdAt}"] | order(_createdAt asc) [0]{
+        slug,
+        title
+      }
+      `
+      )
+      .then((data) => {
+        console.log(data);
+        setNextPost(data);
+      });
+  }, []);
+
   return (
     <Layout>
       <div className="bg-black xl:px-16 text-white">
@@ -32,7 +52,7 @@ const Blog = ({
         <BlogDetailsTop></BlogDetailsTop>
         <BlogDetailsMid></BlogDetailsMid>
         <BlogDetailsCollage></BlogDetailsCollage>
-        <BlogDetailsBottom></BlogDetailsBottom>
+        <BlogDetailsBottom nextPost={nextPost}></BlogDetailsBottom>
       </div>
     </Layout>
   );
@@ -41,6 +61,7 @@ const Blog = ({
 export async function getStaticProps(context) {
   const blog = await client.fetch(
     `*[_type == "blog" && slug.current == "${context.params.slug}" ]{
+      _id,
         title,
         _createdAt,
         slug,
@@ -57,6 +78,7 @@ export async function getStaticProps(context) {
     props: {
       ...blog[0],
       mainImage: blog[0].mainImage.asset.url,
+      key: blog[0]._id,
     },
     revalidate: 60,
   };

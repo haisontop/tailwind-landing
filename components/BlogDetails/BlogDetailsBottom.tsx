@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 import React from "react";
+import Link from "next/link";
 
-const BlogDetailsBottom = () => {
+const BlogDetailsBottom = ({ nextPost }) => {
   const router = useRouter();
   const handleBack = () => {
     router.push(`/blogs`);
@@ -47,9 +48,14 @@ const BlogDetailsBottom = () => {
           >
             Back to all article
           </button>
-          <button className="bg-black text-white py-5 lg:py-7 xl:py-5 rounded-full border-2 w-full mt-5 border-white border-opacity-100 xl:w-96 lg:text-4xl xl:text-base md:text-2xl">
-            Next up: So, what is the metaverse?
-          </button>
+
+          {nextPost && (
+            <Link href={`/blog/${nextPost.slug.current}`}>
+              <a className="inline-block text-center bg-black text-white py-5 lg:py-7 xl:py-5 rounded-full border-2 w-full mt-5 border-white border-opacity-100 xl:w-96 lg:text-4xl xl:text-base md:text-2xl">
+                Next up: {nextPost && nextPost.title}
+              </a>
+            </Link>
+          )}
         </div>
       </div>
     </>

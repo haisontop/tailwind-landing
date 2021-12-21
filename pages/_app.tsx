@@ -5,7 +5,6 @@ import "../assets/styles/HomeAnimation.css";
 import "../assets/styles/index.css";
 import "../assets/styles/slides.css";
 import "../assets/styles/blogs.css";
-import "../assets/styles/services.css";
 import NextNProgress from "nextjs-progressbar";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
