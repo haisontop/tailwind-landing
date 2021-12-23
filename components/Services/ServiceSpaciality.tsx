@@ -14,7 +14,7 @@ const ServiceSpacialities = ({ specialities }: ServiceSpacialitiesProps) => {
     <div className="text-center mt-20 xl:mt-40 px-5 pb-14 lg:px-15 xl:pb-0 md:px-15">
       <div>
         <h1 className="text-white text-3xl lg:text-7xl xl:text-5xl md:text-5xl">
-          Our spacialties
+          Our specialties
         </h1>
       </div>
       <div className="grid grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-2 xl:grid-cols-4 xl:gap-5 mt-14 xl:mt-20 md:grid-cols-2">

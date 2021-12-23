@@ -26,7 +26,7 @@ function Navbar(props: Props): ReactElement {
               <Link href="/blogs">The Write up</Link>
             </li>
             <li className="mt-1">
-              <Link href="/">Contect</Link>
+              <Link href="/">Connect</Link>
             </li>
           </ul>
         </div>
