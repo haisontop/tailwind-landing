@@ -3,7 +3,7 @@ import s from './HomeTop.module.css'
 
 const HomeTop = () => {
   return (
-    <div className="px-6 pt-36 lg:px-52 xl:pl-80 lg:pt-20 md:pt-20 md:px-40">
+    <div className="px-5 pt-36 lg:px-52 xl:pl-60 lg:pt-20 md:pt-20 md:px-40">
       <div className="text-white flex items-center justify-center xl:pb-20 xl:pt-10">
         <div>
           <h1 className={s.mainText}>

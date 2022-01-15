@@ -15,12 +15,12 @@ interface HomeBlogProps {
 
 const HomeBlog = ({ title, preview, mainImage, slug }: HomeBlogProps) => {
   return (
-    <div className="mr-4 xl:mr-0 xl:mb-6">
+    <div className="mr-4 xl:mr-0 xl:mb-10">
       <img src={mainImage.asset.url} width="100%" className="home-blog-image" />
       <h1 className="text-xl xl:text-3xl mt-5">{title}</h1>
       <p className="my-3">{preview}</p>
       <Link href={`/blog/${slug.current}`}>
-        <a className="text-sm lg:text-3xl xl:text-2xl md:text-2xl underline xl:no-underline">READ MORE</a>
+        <a className="text-sm lg:text-3xl xl:text-xl hover:underline md:text-2xl font-sans underline xl:no-underline">READ MORE</a>
       </Link>
     </div>
   );

@@ -60,7 +60,7 @@ export async function getStaticProps(context) {
     props: {
       ...service[0],
       offerings:
-      service[0] && service[0].offerings && service[0].offerings.length > 0
+        service[0] && service[0].offerings && service[0].offerings.length > 0
           ? service[0].offerings.map((offer) => ({
             title: offer.name,
             body: offer.description,

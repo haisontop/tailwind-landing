@@ -3,13 +3,13 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <div className="text-white text-center px-7 my-10 xl:my-10 xl:px-0 sm:py-10 xl:py-20 xl:mx-80 md:mx-14">
-        <div className="mt-10 text-left pr-10 lg:pr-32 xl:pr-80">
+      <div className="text-white text-center px-7 my-10 xl:my-10 xl:px-0 sm:py-10 xl:py-20 xl:mx-72 md:mx-14">
+        <div className="mt-10 text-left pr-10 lg:pr-32 xl:pr-48">
           <h1 className="text-3xl xl:text-5xl md:text-5xl">
-            <span className="text-primary">Digital poineers,</span> <br /> at
+            <span className="text-primary">Digital poineers,</span> at <br />
             your service
           </h1>
-          <p className="mt-10  xl:text-base md:text-2xl">
+          <p className="mt-10  xl:text-xl md:text-2xl">
             just when change you though you had a handle on your business
             infrastructure, some software geeks went and pushed the boundaries
             of the customer experience again! Giving your customers the
@@ -19,11 +19,11 @@ const Services = () => {
             success.
           </p>
         </div>
-        <div className="mt-12 xl:mt-36  text-right lg:pl-52 xl:pl-80 md:pl-40">
+        <div className="mt-12 xl:mt-36  text-right lg:pl-52 xl:pl-24 md:pl-40">
           <h1 className="text-3xl xl:text-5xl md:text-5xl">
             We get <span className="text-green-200"> customer service.</span>
           </h1>
-          <p className="mt-10  xl:text-base md:text-2xl">
+          <p className="mt-10  xl:text-xl md:text-2xl">
             A digital strategy that the delivers results requers vision,
             expertise. and unfaltering excution. The comet team are dedicated IT
             and markating professionals with obession for the very best in

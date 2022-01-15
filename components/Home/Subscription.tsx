@@ -4,7 +4,7 @@ import Link from "next/link";
 const Subscription = () => {
   return (
     <div className="text-white my-24 xl:my-20 xl:mt-52 xl:mb-36">
-      <div className="mx-5 xl:mx-60 md:mx-15">
+      <div className="mx-5 xl:ml-60 xl:mr-48 md:mx-15">
         <h1 className="text-4xl md:text-6xl text-center">
           We work in variety of industries and have strong experience
           <div className="flex justify-center flex-wrap w-full">
@@ -13,7 +13,7 @@ const Subscription = () => {
               <a
                 href="#pablo"
                 className={
-                  "font-normal underline ml-2 whitespace-nowrap bg-transparent"
+                  "font-normal underline ml-2 whitespace-nowrap bg-transparent hover:text-primary"
                 }
               >
                 E-commerce
@@ -24,7 +24,7 @@ const Subscription = () => {
               <a
                 href="#pablo"
                 className={
-                  "font-normal underline ml-2 whitespace-nowrap bg-transparent"
+                  "font-normal underline ml-2 whitespace-nowrap bg-transparent hover:text-aqua"
                 }
               >
                 Healthcare
@@ -35,7 +35,7 @@ const Subscription = () => {
               <a
                 href="#pablo"
                 className={
-                  "font-normal underline ml-2 whitespace-nowrap bg-transparent mr-2"
+                  "font-normal underline ml-2 whitespace-nowrap bg-transparent mr-2 hover:text-aqua"
                 }
               >
                 BlockChain
@@ -46,7 +46,7 @@ const Subscription = () => {
               <a
                 href="#pablo"
                 className={
-                  "font-normal underline ml-2 whitespace-nowrap bg-transparent"
+                  "font-normal underline ml-2 whitespace-nowrap bg-transparent hover:text-primary"
                 }
               >
                 Sass
