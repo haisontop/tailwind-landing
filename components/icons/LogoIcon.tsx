@@ -11,7 +11,7 @@ const LogoIcon = (props) => (
     {...props}
   >
     <defs>
-      <clipPath id="clip-path">
+      <clipPath id="logo-clip-path">
         <rect
           id="Rectangle_2"
           data-name="Rectangle 2"
@@ -21,7 +21,7 @@ const LogoIcon = (props) => (
         />
       </clipPath>
     </defs>
-    <g id="Group_8" data-name="Group 8" clip-path="url(#clip-path)">
+    <g id="Group_8" data-name="Group 8" clip-path="url(#logo-clip-path)">
       <path
         id="Path_7"
         data-name="Path 7"

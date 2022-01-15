@@ -11,10 +11,14 @@ module.exports = {
       },
       colors: {
         primary: "#F5632E",
+        malbec: "#3D1A24",
+        tangerine: "#F5632E",
+        aqua: "#9EE0D6",
+        teal: "#1C3D40",
       },
       zIndex: {
-        '1001': 1001
-      }
+        1001: 1001,
+      },
     },
   },
   variants: {

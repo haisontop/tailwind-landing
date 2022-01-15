@@ -41,39 +41,39 @@ const Services = () => {
           </h1>
         </div>
         <div className="overflow-hidden main-box">
-          <div className="flex gap-2 xl:gap-4 first-slide">
-            <div className="bg-red-900 my-auto text-white py-3 xl:py-5 px-5 rounded-full w-full">
+          <div className="flex gap-4 xl:gap-6 first-slide">
+            <div className="bg-malbec my-auto text-white py-5 xl:py-7 px-5 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Marketing Cloud</h1>
             </div>
-            <div className="bg-primary text-black py-3 xl:py-5 px-14 rounded-full w-full">
+            <div className="bg-primary text-black py-5 xl:py-7 px-14 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Interaction Studio</h1>
             </div>
-            <div className="bg-green-900 text-white px-6 py-3 xl:py-5 rounded-full w-full">
+            <div className="bg-teal text-white px-6 py-5 xl:py-7 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">CRM</h1>
             </div>
-            <div className="bg-black text-white px-6 py-3 xl:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
+            <div className="bg-black text-white px-6 py-5 xl:py-7 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-2xl whitespace-pre">E-Commerce</h1>
             </div>
           </div>
-          <div className="flex gap-4 mt-6 seccond-slide">
-            <div className="bg-black text-white px-14 py-3 xl:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
+          <div className="flex gap-4 xl:gap-6 mt-6 second-slide">
+            <div className="bg-black text-white px-14 py-5 xl:py-7 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-2xl whitespace-pre">Digital Transformation</h1>
             </div>
-            <div className="bg-green-200 text-black px-20 py-3 xl:py-5 rounded-full w-full">
+            <div className="bg-aqua text-black px-20 py-5 xl:py-7 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Marketing Cloud</h1>
             </div>
-            <div className="bg-red-900  text-white px-6 py-3 xl:py-5 rounded-full w-full">
+            <div className="bg-malbec  text-white px-6 py-5 xl:py-7 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Interaction Studio</h1>
             </div>
           </div>
-          <div className="flex gap-4 mt-6 -mr-60 seccond-slide">
-            <div className="bg-green-900 text-white py-3 xl:py-5 rounded-full w-full">
+          <div className="flex gap-4 xl:gap-6 mt-6 -mr-60 third-slide">
+            <div className="bg-teal text-white py-5 xl:py-7 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">CRM</h1>
             </div>
-            <div className="bg-black text-white py-3 xl:py-5 rounded-full border-4 border-white border-opacity-100 w-full">
+            <div className="bg-black text-white py-5 xl:py-7 rounded-full border-4 border-white border-opacity-100 w-full">
               <h1 className="text-2xl whitespace-pre">E-Commerce</h1>
             </div>
-            <div className="bg-primary text-black py-3 xl:py-5 rounded-full w-full">
+            <div className="bg-primary text-black py-5 xl:py-7 rounded-full w-full">
               <h1 className="text-2xl whitespace-pre">Digital Transformation</h1>
             </div>
           </div>

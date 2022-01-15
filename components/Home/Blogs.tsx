@@ -102,7 +102,7 @@ const Blogs = ({ blogs }) => {
     <div className="text-white xl:mx-60 mx-6">
       <div className="grid xl:grid-cols-2 pb-12 xl:pb-0">
         <div className="flex flex-col">
-          <div className=" grid grid-cols-1 xl:sticky xl:top-0">
+          <div className=" grid grid-cols-1 xl:sticky xl:top-10">
             <h1 className="xl:text-5xl text-4xl mb-5 xl:mb-6">The Write Up</h1>
             <p className="font-semibold xl:text-1xl xl:inline-block">Industry news, latest projects, and <br />  marketing insights. </p>
             <Link href="/blogs">

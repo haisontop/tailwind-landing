@@ -85,6 +85,9 @@ const ServiceOffering = ({ offerings }: ServiceOfferingProps) => {
       </div>
     );
   };
+
+  console.log("offerings", offerings)
+
   return (
     <div className="text-white xl:mx-10 mx-6">
       <div className="grid xl:grid-cols-2 pb-12 xl:pb-0">

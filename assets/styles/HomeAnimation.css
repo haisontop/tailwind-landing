@@ -6,21 +6,30 @@
   transition: transform 0.35s;
 }
 
-.seccond-slide {
+.second-slide {
   transition: transform 0.35s;
 }
 
-.main-box:hover .first-slide {
-  transform: translate(70px);
+.third-slide {
+  transition: transform 0.75s;
 }
 
-.main-box:hover .seccond-slide {
-  transform: translate(-70px);
+.main-box:hover .first-slide {
+  transform: translate(100px);
+}
+
+.main-box:hover .second-slide {
+  transform: translate(-100px);
+}
+
+.main-box:hover .third-slide {
+  transform: translate(-200px);
 }
 
 .top-b-t-n {
   transition: transform 0.50s;
 }
+
 
 .top-b-t-n:hover {
   transform: translateY(-7px);

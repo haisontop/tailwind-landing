@@ -1,11 +1,12 @@
 import React from "react";
+import s from './HomeTop.module.css'
 
 const HomeTop = () => {
   return (
-    <div className=" px-6 pt-36 lg:px-52 xl:pl-80  lg:pt-20 md:pt-20  md:px-40">
+    <div className="px-6 pt-36 lg:px-52 xl:pl-80 lg:pt-20 md:pt-20 md:px-40">
       <div className="text-white flex items-center justify-center xl:pb-20 xl:pt-10">
         <div>
-          <h1 className="text-6xl lg:text-8xl xl:text-8xl md:text-7xl ">
+          <h1 className={s.mainText}>
             Your fearless  companion on the  digital frontier.
           </h1>
           <div className=" flex mt-14">
